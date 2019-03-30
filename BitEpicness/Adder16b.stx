@@ -1,0 +1,42 @@
+Release 11.5 - xst L.70 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Code/Verilog/BitEpicness/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to D:/Code/Verilog/BitEpicness/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Adder1b.v" in library work
+Compiling verilog file "Shifter.v" in library work
+Module <Adder1b> compiled
+Compiling verilog file "Adder16b.v" in library work
+Module <Shifter> compiled
+Compiling verilog file "ALU.v" in library work
+Module <Adder16b> compiled
+Module <ALU> compiled
+No errors in compilation
+Analysis of file <"Adder16b.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> 
+
+Total memory usage is 173896 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

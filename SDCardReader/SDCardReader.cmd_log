@@ -1,0 +1,133 @@
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/SDCardReader/SDCardReader.xst" -ofn "D:/Code/Verilog/SDCardReader/SDCardReader.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 SDCardReader.ngc SDCardReader.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o SDCardReader_map.ncd SDCardReader.ngd SDCardReader.pcf 
+par -w -intstyle ise -ol high -t 1 SDCardReader_map.ncd SDCardReader.ncd SDCardReader.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SDCardReader.twx SDCardReader.ncd -o SDCardReader.twr SDCardReader.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f SDCardReader.ut SDCardReader.ncd 

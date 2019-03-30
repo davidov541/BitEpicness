@@ -1,0 +1,3 @@
+verilog work "PWM.v"
+vhdl work "PmodMicRefComp.vhd"
+verilog work "MicTest.v"

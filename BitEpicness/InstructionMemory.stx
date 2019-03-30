@@ -1,0 +1,68 @@
+Release 11.1 - xst L.33 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/mcginnda.ROSE-HULMAN/Desktop/BitEpicness/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/mcginnda.ROSE-HULMAN/Desktop/BitEpicness/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.21 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Comparator1b.v" in library work
+Compiling verilog file "Adder1b.v" in library work
+Module <Comparator1b> compiled
+Compiling verilog file "Shifter.v" in library work
+Module <Adder1b> compiled
+Compiling verilog file "Negator.v" in library work
+Module <Shifter> compiled
+Compiling verilog file "ipcore_dir/MainMem.v" in library work
+Module <Negator> compiled
+Compiling verilog file "ipcore_dir/InstructionMem.v" in library work
+Module <MainMem> compiled
+Compiling verilog file "Comparator16b.v" in library work
+Module <InstructionMem> compiled
+Compiling verilog file "Adder16b.v" in library work
+Module <Comparator16b> compiled
+Compiling verilog file "SignExtend7.v" in library work
+Module <Adder16b> compiled
+Compiling verilog file "RegisterFile.v" in library work
+Module <SignExtend7> compiled
+Compiling verilog file "PCControl.v" in library work
+Module <RegisterFile> compiled
+Compiling verilog file "MainMemory.v" in library work
+Module <PCControl> compiled
+Compiling verilog file "InstructionTranslate.v" in library work
+Module <MainMemory> compiled
+Compiling verilog file "InstructionMemory.v" in library work
+Module <InstructionTranslate> compiled
+Compiling verilog file "Control.v" in library work
+Module <InstructionMemory> compiled
+Compiling verilog file "ALU.v" in library work
+Module <Control> compiled
+Compiling verilog file "BitEpicness.v" in library work
+Module <ALU> compiled
+Module <BitEpicness> compiled
+No errors in compilation
+Analysis of file <"InstructionMemory.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.35 secs
+ 
+--> 
+
+Total memory usage is 157360 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

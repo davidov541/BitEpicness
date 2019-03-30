@@ -1,0 +1,2194 @@
+Release 12.2 - xst M.63c (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: Main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Main.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Main"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ipcore_dir/MainMem.v" in library work
+Compiling verilog file "sendSD.v" in library work
+Module <MainMem> compiled
+Compiling verilog file "receiveSD.v" in library work
+Module <sendSD> compiled
+Compiling verilog file "blockReceiveSD.v" in library work
+Module <receiveSD> compiled
+Compiling verilog file "Shifter.v" in library work
+Module <blockReceiveSD> compiled
+Compiling verilog file "OddParity.v" in library work
+Module <Shifter> compiled
+Compiling verilog file "Negator.v" in library work
+Module <OddParity> compiled
+Compiling verilog file "ipcore_dir/FontMem.v" in library work
+Module <Negator> compiled
+Compiling verilog file "ExecuteCommand.v" in library work
+Module <FontMem> compiled
+Compiling verilog file "Encoder32bit.v" in library work
+Module <ExecuteCommand> compiled
+Compiling verilog file "Comparator16b.v" in library work
+Module <Encoder32bit> compiled
+Compiling verilog file "VGAcontroller.v" in library work
+Module <Comparator16b> compiled
+Compiling verilog file "StallDetector.v" in library work
+Module <VGAcontroller> compiled
+Compiling verilog file "SignExtend7.v" in library work
+Module <StallDetector> compiled
+Compiling verilog file "SDCardReader.v" in library work
+Module <SignExtend7> compiled
+Compiling verilog file "RegisterFile.v" in library work
+Module <SDCardReader> compiled
+Compiling verilog file "ReadPS2.v" in library work
+Module <RegisterFile> compiled
+Compiling verilog file "Pulser.v" in library work
+Module <ReadPS2> compiled
+Compiling verilog file "PCControl.v" in library work
+Module <Pulser> compiled
+Compiling verilog file "LEDDriver.v" in library work
+Module <PCControl> compiled
+Compiling verilog file "ipcore_dir/SDtempRAM.v" in library work
+Module <LEDDriver> compiled
+Compiling verilog file "ipcore_dir/ScreenMem.v" in library work
+Module <SDtempRAM> compiled
+Compiling verilog file "ipcore_dir/ScancodeDecoder.v" in library work
+Module <ScreenMem> compiled
+Compiling verilog file "ipcore_dir/InstructionMem.v" in library work
+Module <ScancodeDecoder> compiled
+Compiling verilog file "InteruptHandler.v" in library work
+Module <InstructionMem> compiled
+Compiling verilog file "InstructionTranslate.v" in library work
+Module <InteruptHandler> compiled
+Compiling verilog file "GPU.v" in library work
+Module <InstructionTranslate> compiled
+Compiling verilog file "Debouncer.v" in library work
+Module <GPU> compiled
+Compiling verilog file "Coprocessor.v" in library work
+Module <Debouncer> compiled
+Compiling verilog file "Control.v" in library work
+Module <Coprocessor> compiled
+Compiling verilog file "ALU.v" in library work
+Module <Control> compiled
+Compiling verilog file "VGA.v" in library work
+Module <ALU> compiled
+Compiling verilog file "SwitchInput.v" in library work
+Module <VGA> compiled
+Compiling verilog file "SevenSegDisplay.v" in library work
+Module <SwitchInput> compiled
+Compiling verilog file "SDCard.v" in library work
+Module <SevenSegDisplay> compiled
+Compiling verilog file "MillisecondTimer.v" in library work
+Module <SDCard> compiled
+Compiling verilog file "MemoryManager.v" in library work
+Module <MillisecondTimer> compiled
+Compiling verilog file "Keyboard.v" in library work
+Module <MemoryManager> compiled
+Compiling verilog file "Decoder32bit.v" in library work
+Module <Keyboard> compiled
+Compiling verilog file "BitEpicness.v" in library work
+Module <Decoder32bit> compiled
+Compiling verilog file "Main.v" in library work
+Module <BitEpicness> compiled
+Module <Main> compiled
+No errors in compilation
+Analysis of file <"Main.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Main> in library <work>.
+
+Analyzing hierarchy for module <BitEpicness> in library <work>.
+
+Analyzing hierarchy for module <MemoryManager> in library <work> with parameters.
+	MAXCOUNT = "1100"
+
+Analyzing hierarchy for module <Decoder32bit> in library <work>.
+
+Analyzing hierarchy for module <SevenSegDisplay> in library <work>.
+
+Analyzing hierarchy for module <MillisecondTimer> in library <work> with parameters.
+	maxCount = "00000000000000000000111100000110"
+
+Analyzing hierarchy for module <SwitchInput> in library <work>.
+
+Analyzing hierarchy for module <VGA> in library <work>.
+
+Analyzing hierarchy for module <SDCard> in library <work> with parameters.
+	maxClock = "00000101"
+
+Analyzing hierarchy for module <Keyboard> in library <work> with parameters.
+	LSHIFT = "00010010"
+	MaxCount = "00000000000000000000000000000010"
+	RSHIFT = "01011001"
+
+Analyzing hierarchy for module <PCControl> in library <work> with parameters.
+	interuptAddress = "00000000000000000000000000001001"
+
+Analyzing hierarchy for module <InstructionTranslate> in library <work>.
+
+Analyzing hierarchy for module <Control> in library <work> with parameters.
+	ADDI = "01100"
+	ALU = "01110"
+	ALU_ADD = "000"
+	ALU_AND = "001"
+	ALU_COMP = "111"
+	ALU_NEG = "100"
+	ALU_NOT = "101"
+	ALU_OR = "010"
+	ALU_SHIFT = "011"
+	ALU_SUB = "110"
+	BEQ = "1010"
+	BGT = "1000"
+	BLT = "1001"
+	BNE = "1011"
+	J = "00000"
+	JAL = "00001"
+	JALR = "00011"
+	JR = "00010"
+	LDI = "00101"
+	LDL = "01001"
+	LDW = "1100"
+	LWN = "1110"
+	MOVE = "00100"
+	NEG = "00110"
+	NOT = "00111"
+	ORI = "01101"
+	SDW = "1101"
+	SLL = "01111"
+	SWN = "1111"
+	SYSCALL = "01000"
+
+Analyzing hierarchy for module <StallDetector> in library <work> with parameters.
+	LDI = "00101"
+	LDL = "01001"
+	LDW = "1100"
+	LWN = "1110"
+	SYSCALL = "01000"
+
+Analyzing hierarchy for module <RegisterFile> in library <work>.
+
+Analyzing hierarchy for module <SignExtend7> in library <work>.
+
+Analyzing hierarchy for module <ALU> in library <work> with parameters.
+	ADD_OP = "000"
+	AND_OP = "001"
+	COMP_OP = "111"
+	NEG_OP = "100"
+	NOT_OP = "101"
+	OR_OP = "010"
+	SHIFT_OP = "011"
+	SUB_OP = "110"
+
+Analyzing hierarchy for module <Coprocessor> in library <work>.
+
+Analyzing hierarchy for module <InteruptHandler> in library <work>.
+
+Analyzing hierarchy for module <LEDDriver> in library <work>.
+
+Analyzing hierarchy for module <Debouncer> in library <work> with parameters.
+	maxCount = "00000000000001001110001000"
+
+Analyzing hierarchy for module <Pulser> in library <work>.
+
+Analyzing hierarchy for module <VGAcontroller> in library <work> with parameters.
+	HmaxCount = "1100011111"
+	VmaxCount = "1000001000"
+
+Analyzing hierarchy for module <GPU> in library <work>.
+
+Analyzing hierarchy for module <SDCardReader> in library <work>.
+
+Analyzing hierarchy for module <ReadPS2> in library <work>.
+
+Analyzing hierarchy for module <Negator> in library <work>.
+
+Analyzing hierarchy for module <Shifter> in library <work>.
+
+Analyzing hierarchy for module <Comparator16b> in library <work>.
+
+Analyzing hierarchy for module <Encoder32bit> in library <work>.
+
+Analyzing hierarchy for module <ExecuteCommand> in library <work>.
+
+Analyzing hierarchy for module <OddParity> in library <work>.
+
+Analyzing hierarchy for module <sendSD> in library <work>.
+
+Analyzing hierarchy for module <receiveSD> in library <work>.
+
+Analyzing hierarchy for module <blockReceiveSD> in library <work> with parameters.
+	maxCount = "111111111111"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Main>.
+Module <Main> is correct for synthesis.
+ 
+Analyzing module <BitEpicness> in library <work>.
+WARNING:Xst:863 - "BitEpicness.v" line 87: Name conflict (<PC> and <pc>, renaming PC as pc_rnm0).
+WARNING:Xst:1464 - "BitEpicness.v" line 227: Exactly equal expression will be synthesized as an equal expression, simulation mismatch is possible.
+WARNING:Xst:1464 - "BitEpicness.v" line 248: Exactly equal expression will be synthesized as an equal expression, simulation mismatch is possible.
+WARNING:Xst:1464 - "BitEpicness.v" line 267: Exactly equal expression will be synthesized as an equal expression, simulation mismatch is possible.
+Module <BitEpicness> is correct for synthesis.
+ 
+Analyzing module <PCControl> in library <work>.
+	interuptAddress = 32'sb00000000000000000000000000001001
+Module <PCControl> is correct for synthesis.
+ 
+Analyzing module <InstructionTranslate> in library <work>.
+Module <InstructionTranslate> is correct for synthesis.
+ 
+Analyzing module <Control> in library <work>.
+	ADDI = 5'b01100
+	ALU = 5'b01110
+	ALU_ADD = 3'b000
+	ALU_AND = 3'b001
+	ALU_COMP = 3'b111
+	ALU_NEG = 3'b100
+	ALU_NOT = 3'b101
+	ALU_OR = 3'b010
+	ALU_SHIFT = 3'b011
+	ALU_SUB = 3'b110
+	BEQ = 4'b1010
+	BGT = 4'b1000
+	BLT = 4'b1001
+	BNE = 4'b1011
+	J = 5'b00000
+	JAL = 5'b00001
+	JALR = 5'b00011
+	JR = 5'b00010
+	LDI = 5'b00101
+	LDL = 5'b01001
+	LDW = 4'b1100
+	LWN = 4'b1110
+	MOVE = 5'b00100
+	NEG = 5'b00110
+	NOT = 5'b00111
+	ORI = 5'b01101
+	SDW = 4'b1101
+	SLL = 5'b01111
+	SWN = 4'b1111
+	SYSCALL = 5'b01000
+Module <Control> is correct for synthesis.
+ 
+Analyzing module <StallDetector> in library <work>.
+	LDI = 5'b00101
+	LDL = 5'b01001
+	LDW = 4'b1100
+	LWN = 4'b1110
+	SYSCALL = 5'b01000
+Module <StallDetector> is correct for synthesis.
+ 
+Analyzing module <RegisterFile> in library <work>.
+Module <RegisterFile> is correct for synthesis.
+ 
+Analyzing module <SignExtend7> in library <work>.
+Module <SignExtend7> is correct for synthesis.
+ 
+Analyzing module <ALU> in library <work>.
+	ADD_OP = 3'b000
+	AND_OP = 3'b001
+	COMP_OP = 3'b111
+	NEG_OP = 3'b100
+	NOT_OP = 3'b101
+	OR_OP = 3'b010
+	SHIFT_OP = 3'b011
+	SUB_OP = 3'b110
+Module <ALU> is correct for synthesis.
+ 
+Analyzing module <Negator> in library <work>.
+Module <Negator> is correct for synthesis.
+ 
+Analyzing module <Shifter> in library <work>.
+Module <Shifter> is correct for synthesis.
+ 
+Analyzing module <Comparator16b> in library <work>.
+Module <Comparator16b> is correct for synthesis.
+ 
+Analyzing module <Coprocessor> in library <work>.
+Module <Coprocessor> is correct for synthesis.
+ 
+Analyzing module <InteruptHandler> in library <work>.
+Module <InteruptHandler> is correct for synthesis.
+ 
+Analyzing module <Encoder32bit> in library <work>.
+Module <Encoder32bit> is correct for synthesis.
+ 
+Analyzing module <MemoryManager> in library <work>.
+	MAXCOUNT = 4'b1100
+Module <MemoryManager> is correct for synthesis.
+ 
+Analyzing module <Decoder32bit> in library <work>.
+Module <Decoder32bit> is correct for synthesis.
+ 
+Analyzing module <SevenSegDisplay> in library <work>.
+Module <SevenSegDisplay> is correct for synthesis.
+ 
+Analyzing module <LEDDriver> in library <work>.
+Module <LEDDriver> is correct for synthesis.
+ 
+Analyzing module <MillisecondTimer> in library <work>.
+	maxCount = 32'sb00000000000000000000111100000110
+Module <MillisecondTimer> is correct for synthesis.
+ 
+Analyzing module <SwitchInput> in library <work>.
+Module <SwitchInput> is correct for synthesis.
+ 
+Analyzing module <Debouncer> in library <work>.
+	maxCount = 26'b00000000000001001110001000
+Module <Debouncer> is correct for synthesis.
+ 
+Analyzing module <Pulser> in library <work>.
+Module <Pulser> is correct for synthesis.
+ 
+Analyzing module <VGA> in library <work>.
+Module <VGA> is correct for synthesis.
+ 
+Analyzing module <VGAcontroller> in library <work>.
+	HmaxCount = 10'b1100011111
+	VmaxCount = 10'b1000001000
+Module <VGAcontroller> is correct for synthesis.
+ 
+Analyzing module <GPU> in library <work>.
+Module <GPU> is correct for synthesis.
+ 
+Analyzing module <SDCard> in library <work>.
+	maxClock = 8'b00000101
+WARNING:Xst:2211 - "ipcore_dir/SDtempRAM.v" line 50: Instantiating black box module <SDtempRAM>.
+Module <SDCard> is correct for synthesis.
+ 
+Analyzing module <SDCardReader> in library <work>.
+Module <SDCardReader> is correct for synthesis.
+ 
+Analyzing module <ExecuteCommand> in library <work>.
+Module <ExecuteCommand> is correct for synthesis.
+ 
+Analyzing module <sendSD> in library <work>.
+Module <sendSD> is correct for synthesis.
+ 
+Analyzing module <receiveSD> in library <work>.
+Module <receiveSD> is correct for synthesis.
+ 
+Analyzing module <blockReceiveSD> in library <work>.
+	maxCount = 12'b111111111111
+Module <blockReceiveSD> is correct for synthesis.
+ 
+Analyzing module <Keyboard> in library <work>.
+	LSHIFT = 8'b00010010
+	MaxCount = 32'sb00000000000000000000000000000010
+	RSHIFT = 8'b01011001
+WARNING:Xst:2211 - "ipcore_dir/ScancodeDecoder.v" line 31: Instantiating black box module <ScancodeDecoder>.
+Module <Keyboard> is correct for synthesis.
+ 
+Analyzing module <ReadPS2> in library <work>.
+Module <ReadPS2> is correct for synthesis.
+ 
+Analyzing module <OddParity> in library <work>.
+Module <OddParity> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Decoder32bit>.
+    Related source file is "Decoder32bit.v".
+Unit <Decoder32bit> synthesized.
+
+
+Synthesizing Unit <MillisecondTimer>.
+    Related source file is "MillisecondTimer.v".
+    Found 32-bit tristate buffer for signal <data>.
+    Found 32-bit register for signal <delay>.
+    Found 32-bit adder for signal <delay$addsub0000> created at line 26.
+    Found 32-bit 4-to-1 multiplexer for signal <delay$mux0000>.
+    Found 32-bit up counter for signal <value>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+	inferred  32 Tristate(s).
+Unit <MillisecondTimer> synthesized.
+
+
+Synthesizing Unit <PCControl>.
+    Related source file is "PCControl.v".
+    Found 32-bit adder for signal <pc$addsub0000> created at line 34.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <PCControl> synthesized.
+
+
+Synthesizing Unit <InstructionTranslate>.
+    Related source file is "InstructionTranslate.v".
+Unit <InstructionTranslate> synthesized.
+
+
+Synthesizing Unit <Control>.
+    Related source file is "Control.v".
+    Found 4x2-bit ROM for signal <$rom0000>.
+    Found 1-bit register for signal <lastLDI>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Control> synthesized.
+
+
+Synthesizing Unit <StallDetector>.
+    Related source file is "StallDetector.v".
+    Found 1-bit register for signal <previousExternalStall>.
+    Found 1-bit register for signal <previousLDI>.
+    Found 4-bit register for signal <previousReg>.
+    Found 1-bit register for signal <previousStall>.
+    Found 1-bit register for signal <previousStallable>.
+    Found 4-bit comparator equal for signal <usesPreviousReg$cmp_eq0000> created at line 26.
+    Found 4-bit comparator equal for signal <usesPreviousReg$cmp_eq0001> created at line 26.
+    Found 4-bit comparator equal for signal <usesPreviousReg$cmp_eq0002> created at line 26.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+Unit <StallDetector> synthesized.
+
+
+Synthesizing Unit <RegisterFile>.
+    Related source file is "RegisterFile.v".
+    Found 32-bit 16-to-1 multiplexer for signal <Out1>.
+    Found 32-bit 16-to-1 multiplexer for signal <Out2>.
+    Found 32-bit 16-to-1 multiplexer for signal <Out3>.
+    Found 32-bit register for signal <Reg10>.
+    Found 32-bit register for signal <Reg11>.
+    Found 32-bit register for signal <Reg12>.
+    Found 32-bit register for signal <Reg13>.
+    Found 32-bit register for signal <Reg14>.
+    Found 32-bit register for signal <Reg15>.
+    Found 32-bit register for signal <Reg16>.
+    Found 32-bit register for signal <Reg2>.
+    Found 32-bit register for signal <Reg3>.
+    Found 32-bit register for signal <Reg4>.
+    Found 32-bit register for signal <Reg5>.
+    Found 32-bit register for signal <Reg6>.
+    Found 32-bit register for signal <Reg7>.
+    Found 32-bit register for signal <Reg8>.
+    Found 32-bit register for signal <Reg9>.
+    Summary:
+	inferred 480 D-type flip-flop(s).
+	inferred  96 Multiplexer(s).
+Unit <RegisterFile> synthesized.
+
+
+Synthesizing Unit <SignExtend7>.
+    Related source file is "SignExtend7.v".
+Unit <SignExtend7> synthesized.
+
+
+Synthesizing Unit <Coprocessor>.
+    Related source file is "Coprocessor.v".
+    Found 32-bit register for signal <baseRegister>.
+    Found 32-bit 4-to-1 multiplexer for signal <dataOut>.
+    Found 32-bit register for signal <interuptMask>.
+    Found 32-bit tristate buffer for signal <portData>.
+    Found 32-bit register for signal <cause>.
+    Found 32-bit register for signal <epc>.
+    Found 32-bit register for signal <mode>.
+    Found 32-bit register for signal <osTemp>.
+    Found 32-bit 6-to-1 multiplexer for signal <regOutput>.
+    Summary:
+	inferred 192 D-type flip-flop(s).
+	inferred  64 Multiplexer(s).
+	inferred  32 Tristate(s).
+Unit <Coprocessor> synthesized.
+
+
+Synthesizing Unit <Negator>.
+    Related source file is "Negator.v".
+    Found 32-bit adder for signal <y>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Negator> synthesized.
+
+
+Synthesizing Unit <Shifter>.
+    Related source file is "Shifter.v".
+    Found 32-bit shifter logical right for signal <r$shift0002> created at line 8.
+    Found 32-bit shifter logical left for signal <r$shift0003> created at line 8.
+    Summary:
+	inferred   2 Combinational logic shifter(s).
+Unit <Shifter> synthesized.
+
+
+Synthesizing Unit <Comparator16b>.
+    Related source file is "Comparator16b.v".
+    Found 32-bit comparator equal for signal <Equal>.
+    Found 32-bit comparator less for signal <AltB>.
+    Found 1-bit xor2 for signal <LT$xor0000> created at line 13.
+    Summary:
+	inferred   2 Comparator(s).
+Unit <Comparator16b> synthesized.
+
+
+Synthesizing Unit <Encoder32bit>.
+    Related source file is "Encoder32bit.v".
+Unit <Encoder32bit> synthesized.
+
+
+Synthesizing Unit <LEDDriver>.
+    Related source file is "LEDDriver.v".
+    Found 16x8-bit ROM for signal <LedOut>.
+    Found 4-bit register for signal <LedSync>.
+    Found 16-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   4 D-type flip-flop(s).
+Unit <LEDDriver> synthesized.
+
+
+Synthesizing Unit <Debouncer>.
+    Related source file is "Debouncer.v".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clock                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 26-bit register for signal <delay>.
+    Found 26-bit subtractor for signal <delay$addsub0000> created at line 28.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Debouncer> synthesized.
+
+
+Synthesizing Unit <Pulser>.
+    Related source file is "Pulser.v".
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clock                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <Pulser> synthesized.
+
+
+Synthesizing Unit <VGAcontroller>.
+    Related source file is "VGAcontroller.v".
+    Found 1-bit register for signal <vSync>.
+    Found 1-bit register for signal <hSync>.
+    Found 10-bit comparator less for signal <draw$cmp_lt0000> created at line 15.
+    Found 10-bit comparator less for signal <draw$cmp_lt0001> created at line 15.
+    Found 10-bit up counter for signal <hCount>.
+    Found 10-bit up counter for signal <vCount>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <VGAcontroller> synthesized.
+
+
+Synthesizing Unit <sendSD>.
+    Related source file is "sendSD.v".
+    Found 1-bit 48-to-1 multiplexer for signal <$varindex0000> created at line 12.
+    Found 6-bit register for signal <count>.
+    Found 6-bit subtractor for signal <count$addsub0000> created at line 24.
+    Found 48-bit register for signal <dataOut>.
+    Summary:
+	inferred  54 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <sendSD> synthesized.
+
+
+Synthesizing Unit <receiveSD>.
+    Related source file is "receiveSD.v".
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state> of Case statement line 35 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clock                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <received>.
+    Found 3-bit register for signal <count>.
+    Found 3-bit subtractor for signal <count$addsub0000> created at line 31.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <receiveSD> synthesized.
+
+
+Synthesizing Unit <blockReceiveSD>.
+    Related source file is "blockReceiveSD.v".
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk400                    (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <casheAddress>.
+    Found 1-bit register for signal <writeCashe>.
+    Found 12-bit up counter for signal <count>.
+    Found 16-bit register for signal <value>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  25 D-type flip-flop(s).
+Unit <blockReceiveSD> synthesized.
+
+
+Synthesizing Unit <OddParity>.
+    Related source file is "OddParity.v".
+    Found 1-bit xor8 for signal <y$xor0000> created at line 10.
+    Summary:
+	inferred   1 Xor(s).
+Unit <OddParity> synthesized.
+
+
+Synthesizing Unit <MemoryManager>.
+    Related source file is "MemoryManager.v".
+WARNING:Xst:647 - Input <baseAddress<31:23>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MT_WAIT> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <memoryAddress<31:23>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_4> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk50                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit tristate buffer for signal <MT_DATA>.
+    Found 23-bit adder for signal <MT_ADDR>.
+    Found 1-bit register for signal <clkCPU>.
+    Found 4-bit up counter for signal <counter>.
+    Found 16-bit register for signal <dataHighReg>.
+    Found 16-bit register for signal <instructionReg>.
+    Found 32-bit 4-to-1 multiplexer for signal <memoryAddress>.
+    Found 32-bit adder for signal <memoryAddress$addsub0000> created at line 48.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+	inferred  16 Tristate(s).
+Unit <MemoryManager> synthesized.
+
+
+Synthesizing Unit <SevenSegDisplay>.
+    Related source file is "SevenSegDisplay.v".
+    Found 32-bit tristate buffer for signal <data>.
+    Found 32-bit register for signal <value>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+	inferred  32 Tristate(s).
+Unit <SevenSegDisplay> synthesized.
+
+
+Synthesizing Unit <SwitchInput>.
+    Related source file is "SwitchInput.v".
+WARNING:Xst:647 - Input <write> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit tristate buffer for signal <data>.
+    Summary:
+	inferred  32 Tristate(s).
+Unit <SwitchInput> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "ALU.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <differencer> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <differenceo> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <adderr> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <addero> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit 8-to-1 multiplexer for signal <r>.
+    Found 1-bit 8-to-1 multiplexer for signal <overflow>.
+    Found 32-bit addsub for signal <r$addsub0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 Multiplexer(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <InteruptHandler>.
+    Related source file is "InteruptHandler.v".
+    Found 32-bit register for signal <buffer>.
+    Found 1-bit register for signal <enabled>.
+    Found 4-bit register for signal <interuptDelay>.
+    Found 32-bit register for signal <shifter>.
+    Summary:
+	inferred  37 D-type flip-flop(s).
+Unit <InteruptHandler> synthesized.
+
+
+Synthesizing Unit <GPU>.
+    Related source file is "GPU.v".
+WARNING:Xst:647 - Input <drawBox> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:1799 - State 1000 is never reached in FSM <state>.
+INFO:Xst:1799 - State 0111 is never reached in FSM <state>.
+    Found finite state machine <FSM_5> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk50                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit comparator equal for signal <state$cmp_eq0001> created at line 68.
+    Found 9-bit comparator equal for signal <state$cmp_eq0002> created at line 69.
+    Found 9-bit adder for signal <writeAddress$add0000> created at line 41.
+    Found 8-bit adder for signal <writeAddress$add0001> created at line 41.
+    Found 3-bit adder for signal <xIndex>.
+    Found 8-bit up counter for signal <xOffset>.
+    Found 9-bit up counter for signal <yOffset>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <GPU> synthesized.
+
+
+Synthesizing Unit <ExecuteCommand>.
+    Related source file is "ExecuteCommand.v".
+    Found finite state machine <FSM_6> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk400                    (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <ExecuteCommand> synthesized.
+
+
+Synthesizing Unit <ReadPS2>.
+    Related source file is "ReadPS2.v".
+WARNING:Xst:646 - Signal <shiftReg<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <error>.
+    Found 1-bit register for signal <received>.
+    Found 4-bit up counter for signal <count>.
+    Found 1-bit xor2 for signal <error$xor0000> created at line 36.
+    Found 1-bit register for signal <pastClk>.
+    Found 11-bit register for signal <shiftReg>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  14 D-type flip-flop(s).
+Unit <ReadPS2> synthesized.
+
+
+Synthesizing Unit <BitEpicness>.
+    Related source file is "BitEpicness.v".
+WARNING:Xst:646 - Signal <WB_WB<4:1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <MEM_Instruction<15:7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <EX_JTarget> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <EX_EX<11:7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit 4-to-1 multiplexer for signal <alusrcb>.
+    Found 12-bit register for signal <EX_EX>.
+    Found 7-bit register for signal <EX_Imm>.
+    Found 16-bit register for signal <EX_Instruction>.
+    Found 9-bit register for signal <EX_MEM>.
+    Found 32-bit register for signal <EX_PC>.
+    Found 32-bit register for signal <EX_RegA>.
+    Found 32-bit register for signal <EX_RegB>.
+    Found 32-bit register for signal <EX_RegC>.
+    Found 4-bit register for signal <EX_RegTarget>.
+    Found 5-bit register for signal <EX_WB>.
+    Found 4-bit comparator equal for signal <forwardedrega$cmp_eq0001> created at line 116.
+    Found 4-bit comparator equal for signal <forwardedrega$cmp_eq0002> created at line 116.
+    Found 4-bit comparator equal for signal <forwardedrega$cmp_eq0003> created at line 116.
+    Found 4-bit comparator equal for signal <forwardedregb$cmp_eq0001> created at line 122.
+    Found 4-bit comparator equal for signal <forwardedregb$cmp_eq0002> created at line 122.
+    Found 4-bit comparator equal for signal <forwardedregb$cmp_eq0003> created at line 122.
+    Found 4-bit comparator equal for signal <forwardedregc$cmp_eq0001> created at line 128.
+    Found 4-bit comparator equal for signal <forwardedregc$cmp_eq0002> created at line 128.
+    Found 4-bit comparator equal for signal <forwardedregc$cmp_eq0003> created at line 128.
+    Found 1-bit register for signal <MEM_ALUOverflow>.
+    Found 32-bit register for signal <MEM_EXOut>.
+    Found 16-bit register for signal <MEM_Instruction>.
+    Found 9-bit register for signal <MEM_MEM>.
+    Found 32-bit register for signal <MEM_PC>.
+    Found 32-bit register for signal <MEM_RegA>.
+    Found 32-bit register for signal <MEM_RegC>.
+    Found 4-bit register for signal <MEM_RegTarget>.
+    Found 5-bit register for signal <MEM_WB>.
+    Found 32-bit register for signal <pc_rnm0>.
+    Found 12-bit register for signal <REG_EX>.
+    Found 7-bit register for signal <REG_Imm>.
+    Found 16-bit register for signal <REG_Instruction>.
+    Found 32-bit register for signal <REG_JTarget>.
+    Found 9-bit register for signal <REG_MEM>.
+    Found 32-bit register for signal <REG_PC>.
+    Found 32-bit 4-to-1 multiplexer for signal <REG_PC$mux0000>.
+    Found 1-bit register for signal <REG_REG>.
+    Found 4-bit register for signal <REG_RegAddrA>.
+    Found 4-bit register for signal <REG_RegAddrB>.
+    Found 4-bit register for signal <REG_RegAddrC>.
+    Found 5-bit register for signal <REG_WB>.
+    Found 4-bit 3-to-1 multiplexer for signal <regwriteaddr>.
+    Found 32-bit register for signal <WB_Data>.
+    Found 4-bit register for signal <WB_RegTarget>.
+    Found 5-bit register for signal <WB_WB>.
+    Found 32-bit adder for signal <wbdata$addsub0000> created at line 157.
+    Summary:
+	inferred 543 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 Comparator(s).
+	inferred  68 Multiplexer(s).
+Unit <BitEpicness> synthesized.
+
+
+Synthesizing Unit <VGA>.
+    Related source file is "VGA.v".
+WARNING:Xst:653 - Signal <yMaxSaved> is used but never assigned. This sourceless signal will be automatically connected to value 000000000.
+WARNING:Xst:653 - Signal <xMaxSaved> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:646 - Signal <saveYMax> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <saveXMax> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit tristate buffer for signal <$mux0000>.
+    Found 7-bit register for signal <charSaved>.
+    Found 1-bit register for signal <clk25>.
+    Found 3-bit register for signal <colorSaved>.
+    Found 8-bit register for signal <xSaved>.
+    Found 9-bit register for signal <ySaved>.
+    Summary:
+	inferred  28 D-type flip-flop(s).
+	inferred  32 Tristate(s).
+Unit <VGA> synthesized.
+
+
+Synthesizing Unit <Keyboard>.
+    Related source file is "Keyboard.v".
+WARNING:Xst:647 - Input <write> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <lastCode<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <error> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state> of Case statement line 67 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found finite state machine <FSM_7> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 19                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 3                                              |
+    | Clock              | slowClock                 (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit tristate buffer for signal <data>.
+    Found 5-bit up counter for signal <clkCounter>.
+    Found 8-bit register for signal <lastCode>.
+    Found 1-bit register for signal <lastDone>.
+    Found 1-bit register for signal <shiftPressed>.
+    Found 1-bit register for signal <slowClock>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  11 D-type flip-flop(s).
+	inferred  32 Tristate(s).
+Unit <Keyboard> synthesized.
+
+
+Synthesizing Unit <SDCardReader>.
+    Related source file is "SDCardReader.v".
+    Found finite state machine <FSM_8> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 17                                             |
+    | Transitions        | 26                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 21                                             |
+    | Clock              | clk400                    (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00000                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <SDcs>.
+    Found 8-bit register for signal <delayCounter>.
+    Found 8-bit subtractor for signal <delayCounter$addsub0000> created at line 52.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <SDCardReader> synthesized.
+
+
+Synthesizing Unit <SDCard>.
+    Related source file is "SDCard.v".
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state> of Case statement line 99 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found finite state machine <FSM_9> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clkCPU                    (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <writeAddress>.
+    Found 32-bit tristate buffer for signal <data>.
+    Found 1-bit register for signal <clk400>.
+    Found 8-bit up counter for signal <clockCounter>.
+    Found 3-bit down counter for signal <delayCount>.
+    Found 8-bit up counter for signal <index>.
+    Found 32-bit register for signal <memoryAddress>.
+    Found 5-bit register for signal <readSDcount>.
+    Found 5-bit subtractor for signal <readSDcount$addsub0000> created at line 74.
+    Found 32-bit register for signal <sdBlockAddress>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   3 Counter(s).
+	inferred  70 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  32 Tristate(s).
+Unit <SDCard> synthesized.
+
+
+Synthesizing Unit <Main>.
+    Related source file is "Main.v".
+WARNING:Xst:647 - Input <sdata1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <sdata2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <writeEnable<31:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <readEnable<31:6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <Main> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 1
+ 4x2-bit ROM                                           : 1
+# Adders/Subtractors                                   : 16
+ 23-bit adder                                          : 1
+ 26-bit subtractor                                     : 1
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 6
+ 32-bit addsub                                         : 1
+ 5-bit subtractor                                      : 1
+ 6-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 13
+ 10-bit up counter                                     : 2
+ 12-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 3-bit down counter                                    : 1
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+ 5-bit up counter                                      : 1
+ 8-bit up counter                                      : 3
+ 9-bit up counter                                      : 1
+# Registers                                            : 100
+ 1-bit register                                        : 21
+ 11-bit register                                       : 1
+ 12-bit register                                       : 2
+ 16-bit register                                       : 6
+ 26-bit register                                       : 1
+ 3-bit register                                        : 2
+ 32-bit register                                       : 39
+ 4-bit register                                        : 9
+ 48-bit register                                       : 1
+ 5-bit register                                        : 5
+ 6-bit register                                        : 1
+ 7-bit register                                        : 3
+ 8-bit register                                        : 5
+ 9-bit register                                        : 4
+# Comparators                                          : 18
+ 10-bit comparator less                                : 2
+ 32-bit comparator equal                               : 1
+ 32-bit comparator less                                : 1
+ 4-bit comparator equal                                : 12
+ 8-bit comparator equal                                : 1
+ 9-bit comparator equal                                : 1
+# Multiplexers                                         : 14
+ 1-bit 48-to-1 multiplexer                             : 1
+ 1-bit 5-to-1 multiplexer                              : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+ 32-bit 16-to-1 multiplexer                            : 3
+ 32-bit 4-to-1 multiplexer                             : 5
+ 32-bit 6-to-1 multiplexer                             : 1
+ 32-bit 8-to-1 multiplexer                             : 1
+ 4-bit 3-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Tristates                                            : 8
+ 16-bit tristate buffer                                : 1
+ 32-bit tristate buffer                                : 7
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
+ 1-bit xor8                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_9> for best encoding.
+Optimizing FSM <p4/state/FSM> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <FSM_8> for best encoding.
+Optimizing FSM <p4/u0/state/FSM> on signal <state[1:17]> with one-hot encoding.
+----------------------------
+ State | Encoding
+----------------------------
+ 00000 | 00000000000000001
+ 00001 | 00000000000000010
+ 00010 | 00000000000000100
+ 00011 | 00000000000001000
+ 00100 | 00000000000010000
+ 00101 | 00000000000100000
+ 00110 | 00000000001000000
+ 00111 | 00000000010000000
+ 01000 | 00000000100000000
+ 01001 | 00000001000000000
+ 01010 | 00000010000000000
+ 01011 | 00000100000000000
+ 01100 | 00001000000000000
+ 01101 | 00010000000000000
+ 01110 | 00100000000000000
+ 01111 | 10000000000000000
+ 10000 | 01000000000000000
+----------------------------
+Analyzing FSM <FSM_7> for best encoding.
+Optimizing FSM <p5/state/FSM> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+ 101   | 101
+ 110   | 110
+ 111   | 111
+-------------------
+Analyzing FSM <FSM_6> for best encoding.
+Optimizing FSM <p4/u0/u0/state/FSM> on signal <state[1:7]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000001
+ 0001  | 0000010
+ 0010  | 0000100
+ 0011  | 0001000
+ 0100  | 0010000
+ 0101  | 0100000
+ 0110  | 1000000
+-------------------
+Analyzing FSM <FSM_5> for best encoding.
+Optimizing FSM <p3/u1/state/FSM> on signal <state[1:7]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000001
+ 0001  | 0000010
+ 0010  | 0000100
+ 0011  | 0001000
+ 0100  | 0010000
+ 0101  | 0100000
+ 0110  | 1000000
+ 0111  | unreached
+ 1000  | unreached
+-------------------
+Analyzing FSM <FSM_4> for best encoding.
+Optimizing FSM <u1/state/FSM> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <p4/u0/u0/u2/state/FSM> on signal <state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+-------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <p4/u0/u0/u1/state/FSM> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <p2/u1/state/FSM> on signal <state[1:3]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 001
+ 01    | 010
+ 10    | 100
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <p2/u0/state/FSM> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+-------------------
+Reading core <ipcore_dir/InstructionMem.ngc>.
+Reading core <ipcore_dir/FontMem.ngc>.
+Reading core <ipcore_dir/ScreenMem.ngc>.
+Reading core <ipcore_dir/ScancodeDecoder.ngc>.
+Reading core <ipcore_dir/SDtempRAM.ngc>.
+Loading core <InstructionMem> for timing and area information for instance <IMem>.
+Loading core <FontMem> for timing and area information for instance <fontMem>.
+Loading core <ScreenMem> for timing and area information for instance <u2>.
+Loading core <ScancodeDecoder> for timing and area information for instance <u1>.
+Loading core <SDtempRAM> for timing and area information for instance <u2>.
+WARNING:Xst:1290 - Hierarchical block <u0> is unconnected in block <u0>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <REG_EX_7> in Unit <u0> is equivalent to the following 5 FFs/Latches, which will be removed : <REG_EX_8> <REG_EX_9> <REG_EX_10> <REG_EX_11> <REG_WB_4> 
+INFO:Xst:2261 - The FF/Latch <dataOut_1> in Unit <u0> is equivalent to the following 4 FFs/Latches, which will be removed : <dataOut_3> <dataOut_5> <dataOut_6> <dataOut_47> 
+INFO:Xst:2261 - The FF/Latch <dataOut_0> in Unit <u0> is equivalent to the following 4 FFs/Latches, which will be removed : <dataOut_2> <dataOut_4> <dataOut_7> <dataOut_46> 
+INFO:Xst:2261 - The FF/Latch <sdBlockAddress_0> in Unit <p4> is equivalent to the following 8 FFs/Latches, which will be removed : <sdBlockAddress_1> <sdBlockAddress_2> <sdBlockAddress_3> <sdBlockAddress_4> <sdBlockAddress_5> <sdBlockAddress_6> <sdBlockAddress_7> <sdBlockAddress_8> 
+INFO:Xst:2261 - The FF/Latch <memoryAddress_30> in Unit <p4> is equivalent to the following FF/Latch, which will be removed : <memoryAddress_31> 
+WARNING:Xst:1710 - FF/Latch <memoryAddress_30> (without init value) has a constant value of 0 in block <p4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sdBlockAddress_0> (without init value) has a constant value of 0 in block <p4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataOut_16> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataOut_15> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataOut_14> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataOut_13> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataOut_12> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataOut_11> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataOut_10> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataOut_9> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataOut_8> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <dataOut_1> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_31> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_30> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_29> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_28> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_11> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_12> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_13> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_14> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_15> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_16> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_17> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_18> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_19> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_20> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_21> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_22> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_23> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_24> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_25> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_26> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_27> (without init value) has a constant value of 0 in block <u0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <WB_WB_1> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <WB_WB_2> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <WB_WB_3> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <WB_WB_4> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_WB_1> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_WB_2> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_WB_3> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_WB_4> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <REG_EX_7> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <REG_WB_3> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <EX_EX_7> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <EX_EX_8> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <EX_EX_9> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <EX_EX_10> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <EX_EX_11> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <EX_WB_1> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <EX_WB_2> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <EX_WB_3> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <EX_WB_4> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_Instruction_7> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_Instruction_8> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_Instruction_9> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_Instruction_10> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_Instruction_11> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_Instruction_12> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_Instruction_13> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_Instruction_14> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <MEM_Instruction_15> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <shiftReg_0> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <lastCode_7> of sequential type is unconnected in block <p5>.
+WARNING:Xst:2404 -  FFs/Latches <dataOut<47:47>> (without init value) have a constant value of 0 in block <sendSD>.
+WARNING:Xst:2404 -  FFs/Latches <memoryAddress<31:30>> (without init value) have a constant value of 0 in block <SDCard>.
+WARNING:Xst:2677 - Node <shiftReg_0> of sequential type is unconnected in block <ReadPS2>.
+WARNING:Xst:2677 - Node <WB_WB_1> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <WB_WB_2> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <WB_WB_3> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <WB_WB_4> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_WB_1> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_WB_2> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_WB_3> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_WB_4> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <REG_EX_7> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <REG_EX_8> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <REG_EX_9> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <REG_EX_10> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <REG_EX_11> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <REG_WB_3> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <REG_WB_4> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <EX_WB_1> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <EX_WB_2> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <EX_WB_3> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <EX_WB_4> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <EX_EX_7> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <EX_EX_8> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <EX_EX_9> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <EX_EX_10> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <EX_EX_11> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_Instruction_7> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_Instruction_8> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_Instruction_9> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_Instruction_10> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_Instruction_11> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_Instruction_12> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_Instruction_13> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_Instruction_14> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <MEM_Instruction_15> of sequential type is unconnected in block <BitEpicness>.
+WARNING:Xst:2677 - Node <lastCode_7> of sequential type is unconnected in block <Keyboard>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 10
+# ROMs                                                 : 2
+ 16x8-bit ROM                                          : 1
+ 4x2-bit ROM                                           : 1
+# Adders/Subtractors                                   : 16
+ 23-bit adder                                          : 1
+ 26-bit subtractor                                     : 1
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 1
+ 32-bit adder                                          : 6
+ 32-bit addsub                                         : 1
+ 5-bit subtractor                                      : 1
+ 6-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 1
+# Counters                                             : 13
+ 10-bit up counter                                     : 2
+ 12-bit up counter                                     : 1
+ 16-bit up counter                                     : 1
+ 3-bit down counter                                    : 1
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+ 5-bit up counter                                      : 1
+ 8-bit up counter                                      : 3
+ 9-bit up counter                                      : 1
+# Registers                                            : 1606
+ Flip-Flops                                            : 1606
+# Comparators                                          : 18
+ 10-bit comparator less                                : 2
+ 32-bit comparator equal                               : 1
+ 32-bit comparator less                                : 1
+ 4-bit comparator equal                                : 12
+ 8-bit comparator equal                                : 1
+ 9-bit comparator equal                                : 1
+# Multiplexers                                         : 107
+ 1-bit 4-to-1 multiplexer                              : 64
+ 1-bit 48-to-1 multiplexer                             : 1
+ 1-bit 5-to-1 multiplexer                              : 1
+ 1-bit 6-to-1 multiplexer                              : 32
+ 1-bit 8-to-1 multiplexer                              : 1
+ 32-bit 16-to-1 multiplexer                            : 3
+ 32-bit 4-to-1 multiplexer                             : 3
+ 32-bit 8-to-1 multiplexer                             : 1
+ 4-bit 3-to-1 multiplexer                              : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 3
+ 1-bit xor2                                            : 2
+ 1-bit xor8                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <dataOut_1> (without init value) has a constant value of 0 in block <sendSD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataOut_3> (without init value) has a constant value of 0 in block <sendSD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataOut_5> (without init value) has a constant value of 0 in block <sendSD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dataOut_6> (without init value) has a constant value of 0 in block <sendSD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sdBlockAddress_0> (without init value) has a constant value of 0 in block <SDCard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdBlockAddress_1> (without init value) has a constant value of 0 in block <SDCard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdBlockAddress_2> (without init value) has a constant value of 0 in block <SDCard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdBlockAddress_3> (without init value) has a constant value of 0 in block <SDCard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdBlockAddress_4> (without init value) has a constant value of 0 in block <SDCard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdBlockAddress_5> (without init value) has a constant value of 0 in block <SDCard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdBlockAddress_6> (without init value) has a constant value of 0 in block <SDCard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdBlockAddress_7> (without init value) has a constant value of 0 in block <SDCard>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sdBlockAddress_8> (without init value) has a constant value of 0 in block <SDCard>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <dataOut_0> in Unit <sendSD> is equivalent to the following 4 FFs/Latches, which will be removed : <dataOut_2> <dataOut_4> <dataOut_7> <dataOut_46> 
+INFO:Xst:2261 - The FF/Latch <REG_Instruction_0> in Unit <BitEpicness> is equivalent to the following 3 FFs/Latches, which will be removed : <REG_RegAddrC_0> <REG_Imm_0> <REG_JTarget_0> 
+INFO:Xst:2261 - The FF/Latch <REG_Instruction_1> in Unit <BitEpicness> is equivalent to the following 3 FFs/Latches, which will be removed : <REG_RegAddrC_1> <REG_Imm_1> <REG_JTarget_1> 
+INFO:Xst:2261 - The FF/Latch <REG_Instruction_2> in Unit <BitEpicness> is equivalent to the following 3 FFs/Latches, which will be removed : <REG_RegAddrC_2> <REG_Imm_2> <REG_JTarget_2> 
+INFO:Xst:2261 - The FF/Latch <REG_Instruction_3> in Unit <BitEpicness> is equivalent to the following 3 FFs/Latches, which will be removed : <REG_RegAddrC_3> <REG_Imm_3> <REG_JTarget_3> 
+INFO:Xst:2261 - The FF/Latch <REG_Instruction_10> in Unit <BitEpicness> is equivalent to the following FF/Latch, which will be removed : <REG_JTarget_10> 
+INFO:Xst:2261 - The FF/Latch <REG_Instruction_4> in Unit <BitEpicness> is equivalent to the following 2 FFs/Latches, which will be removed : <REG_Imm_4> <REG_JTarget_4> 
+INFO:Xst:2261 - The FF/Latch <REG_Instruction_5> in Unit <BitEpicness> is equivalent to the following 2 FFs/Latches, which will be removed : <REG_Imm_5> <REG_JTarget_5> 
+INFO:Xst:2261 - The FF/Latch <REG_Instruction_6> in Unit <BitEpicness> is equivalent to the following 2 FFs/Latches, which will be removed : <REG_Imm_6> <REG_JTarget_6> 
+INFO:Xst:2261 - The FF/Latch <REG_Instruction_7> in Unit <BitEpicness> is equivalent to the following FF/Latch, which will be removed : <REG_JTarget_7> 
+INFO:Xst:2261 - The FF/Latch <REG_Instruction_8> in Unit <BitEpicness> is equivalent to the following FF/Latch, which will be removed : <REG_JTarget_8> 
+INFO:Xst:2261 - The FF/Latch <REG_Instruction_9> in Unit <BitEpicness> is equivalent to the following FF/Latch, which will be removed : <REG_JTarget_9> 
+INFO:Xst:2261 - The FF/Latch <REG_JTarget_11> in Unit <BitEpicness> is equivalent to the following 20 FFs/Latches, which will be removed : <REG_JTarget_12> <REG_JTarget_13> <REG_JTarget_14> <REG_JTarget_15> <REG_JTarget_16> <REG_JTarget_17> <REG_JTarget_18> <REG_JTarget_19> <REG_JTarget_20> <REG_JTarget_21> <REG_JTarget_22> <REG_JTarget_23> <REG_JTarget_24> <REG_JTarget_25> <REG_JTarget_26> <REG_JTarget_27> <REG_JTarget_28> <REG_JTarget_29> <REG_JTarget_30> <REG_JTarget_31> 
+WARNING:Xst:1710 - FF/Latch <REG_JTarget_11> (without init value) has a constant value of 0 in block <BitEpicness>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <EX_Instruction_0> in Unit <BitEpicness> is equivalent to the following FF/Latch, which will be removed : <EX_Imm_0> 
+INFO:Xst:2261 - The FF/Latch <EX_Instruction_1> in Unit <BitEpicness> is equivalent to the following FF/Latch, which will be removed : <EX_Imm_1> 
+INFO:Xst:2261 - The FF/Latch <EX_Instruction_2> in Unit <BitEpicness> is equivalent to the following FF/Latch, which will be removed : <EX_Imm_2> 
+INFO:Xst:2261 - The FF/Latch <EX_Instruction_3> in Unit <BitEpicness> is equivalent to the following FF/Latch, which will be removed : <EX_Imm_3> 
+INFO:Xst:2261 - The FF/Latch <EX_Instruction_4> in Unit <BitEpicness> is equivalent to the following FF/Latch, which will be removed : <EX_Imm_4> 
+INFO:Xst:2261 - The FF/Latch <EX_Instruction_5> in Unit <BitEpicness> is equivalent to the following FF/Latch, which will be removed : <EX_Imm_5> 
+INFO:Xst:2261 - The FF/Latch <EX_Instruction_6> in Unit <BitEpicness> is equivalent to the following FF/Latch, which will be removed : <EX_Imm_6> 
+WARNING:Xst:2042 - Unit SDCard: 32 internal tristates are replaced by logic (pull-up yes): data<0>, data<10>, data<11>, data<12>, data<13>, data<14>, data<15>, data<16>, data<17>, data<18>, data<19>, data<1>, data<20>, data<21>, data<22>, data<23>, data<24>, data<25>, data<26>, data<27>, data<28>, data<29>, data<2>, data<30>, data<31>, data<3>, data<4>, data<5>, data<6>, data<7>, data<8>, data<9>.
+WARNING:Xst:2042 - Unit MillisecondTimer: 32 internal tristates are replaced by logic (pull-up yes): data<0>, data<10>, data<11>, data<12>, data<13>, data<14>, data<15>, data<16>, data<17>, data<18>, data<19>, data<1>, data<20>, data<21>, data<22>, data<23>, data<24>, data<25>, data<26>, data<27>, data<28>, data<29>, data<2>, data<30>, data<31>, data<3>, data<4>, data<5>, data<6>, data<7>, data<8>, data<9>.
+WARNING:Xst:2042 - Unit SevenSegDisplay: 32 internal tristates are replaced by logic (pull-up yes): data<0>, data<10>, data<11>, data<12>, data<13>, data<14>, data<15>, data<16>, data<17>, data<18>, data<19>, data<1>, data<20>, data<21>, data<22>, data<23>, data<24>, data<25>, data<26>, data<27>, data<28>, data<29>, data<2>, data<30>, data<31>, data<3>, data<4>, data<5>, data<6>, data<7>, data<8>, data<9>.
+WARNING:Xst:2042 - Unit Keyboard: 32 internal tristates are replaced by logic (pull-up yes): data<0>, data<10>, data<11>, data<12>, data<13>, data<14>, data<15>, data<16>, data<17>, data<18>, data<19>, data<1>, data<20>, data<21>, data<22>, data<23>, data<24>, data<25>, data<26>, data<27>, data<28>, data<29>, data<2>, data<30>, data<31>, data<3>, data<4>, data<5>, data<6>, data<7>, data<8>, data<9>.
+WARNING:Xst:2042 - Unit SwitchInput: 32 internal tristates are replaced by logic (pull-up yes): data<0>, data<10>, data<11>, data<12>, data<13>, data<14>, data<15>, data<16>, data<17>, data<18>, data<19>, data<1>, data<20>, data<21>, data<22>, data<23>, data<24>, data<25>, data<26>, data<27>, data<28>, data<29>, data<2>, data<30>, data<31>, data<3>, data<4>, data<5>, data<6>, data<7>, data<8>, data<9>.
+WARNING:Xst:2042 - Unit VGA: 32 internal tristates are replaced by logic (pull-up yes): data<0>, data<10>, data<11>, data<12>, data<13>, data<14>, data<15>, data<16>, data<17>, data<18>, data<19>, data<1>, data<20>, data<21>, data<22>, data<23>, data<24>, data<25>, data<26>, data<27>, data<28>, data<29>, data<2>, data<30>, data<31>, data<3>, data<4>, data<5>, data<6>, data<7>, data<8>, data<9>.
+WARNING:Xst:2042 - Unit Coprocessor: 32 internal tristates are replaced by logic (pull-up yes): portData<0>, portData<10>, portData<11>, portData<12>, portData<13>, portData<14>, portData<15>, portData<16>, portData<17>, portData<18>, portData<19>, portData<1>, portData<20>, portData<21>, portData<22>, portData<23>, portData<24>, portData<25>, portData<26>, portData<27>, portData<28>, portData<29>, portData<2>, portData<30>, portData<31>, portData<3>, portData<4>, portData<5>, portData<6>, portData<7>, portData<8>, portData<9>.
+WARNING:Xst:2677 - Node <p4/memoryAddress_29> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <p4/memoryAddress_28> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <p4/memoryAddress_27> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <p4/memoryAddress_26> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <p4/memoryAddress_25> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <p4/memoryAddress_24> of sequential type is unconnected in block <Main>.
+WARNING:Xst:2677 - Node <p4/memoryAddress_23> of sequential type is unconnected in block <Main>.
+
+Optimizing unit <Main> ...
+
+Optimizing unit <PCControl> ...
+
+Optimizing unit <Control> ...
+
+Optimizing unit <StallDetector> ...
+
+Optimizing unit <RegisterFile> ...
+
+Optimizing unit <Negator> ...
+
+Optimizing unit <Shifter> ...
+
+Optimizing unit <LEDDriver> ...
+
+Optimizing unit <Debouncer> ...
+
+Optimizing unit <VGAcontroller> ...
+
+Optimizing unit <sendSD> ...
+
+Optimizing unit <receiveSD> ...
+
+Optimizing unit <blockReceiveSD> ...
+
+Optimizing unit <GPU> ...
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <InteruptHandler> ...
+
+Optimizing unit <ReadPS2> ...
+
+Optimizing unit <SDCardReader> ...
+WARNING:Xst:1710 - FF/Latch <u0/i0/buffer_12> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_11> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_10> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_9> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_8> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_7> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_6> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_3> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_1> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_0> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p4/u0/u0/u0/dataOut_8> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p4/u0/u0/u0/dataOut_9> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p4/u0/u0/u0/dataOut_10> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p4/u0/u0/u0/dataOut_11> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p4/u0/u0/u0/dataOut_12> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p4/u0/u0/u0/dataOut_13> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p4/u0/u0/u0/dataOut_14> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p4/u0/u0/u0/dataOut_15> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p4/u0/u0/u0/dataOut_16> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_31> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_30> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_29> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_28> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_27> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_26> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_25> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_24> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_23> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_22> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_21> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_20> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_19> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_18> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_17> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_16> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_15> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_14> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <u0/i0/buffer_13> (without init value) has a constant value of 0 in block <Main>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <p5/u0/error> of sequential type is unconnected in block <Main>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <p4/u0/u0/u0/dataOut_41> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <p4/u0/u0/u0/dataOut_42> 
+INFO:Xst:2261 - The FF/Latch <u0/REG_RegAddrA_0> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <u0/s0/previousReg_0> 
+INFO:Xst:2261 - The FF/Latch <u0/REG_RegAddrA_1> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <u0/s0/previousReg_1> 
+INFO:Xst:2261 - The FF/Latch <u0/REG_RegAddrA_2> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <u0/s0/previousReg_2> 
+INFO:Xst:2261 - The FF/Latch <u0/REG_RegAddrA_3> in Unit <Main> is equivalent to the following FF/Latch, which will be removed : <u0/s0/previousReg_3> 
+Found area constraint ratio of 100 (+ 5) on block Main, actual ratio is 47.
+FlipFlop u0/EX_EX_1 has been replicated 2 time(s)
+FlipFlop u0/EX_EX_2 has been replicated 1 time(s)
+FlipFlop u0/MEM_MEM_0 has been replicated 1 time(s)
+FlipFlop u0/MEM_MEM_1 has been replicated 1 time(s)
+FlipFlop u0/MEM_MEM_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1668
+ Flip-Flops                                            : 1668
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Main.ngr
+Top Level Output File Name         : Main
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 96
+
+Cell Usage :
+# BELS                             : 5613
+#      BUF                         : 3
+#      GND                         : 6
+#      INV                         : 70
+#      LUT1                        : 148
+#      LUT2                        : 352
+#      LUT2_D                      : 2
+#      LUT2_L                      : 2
+#      LUT3                        : 1499
+#      LUT3_D                      : 76
+#      LUT3_L                      : 36
+#      LUT4                        : 1299
+#      LUT4_D                      : 30
+#      LUT4_L                      : 151
+#      MUXCY                       : 428
+#      MUXF5                       : 790
+#      MUXF6                       : 230
+#      MUXF7                       : 99
+#      MUXF8                       : 1
+#      VCC                         : 6
+#      XORCY                       : 385
+# FlipFlops/Latches                : 1671
+#      FDC                         : 598
+#      FDC_1                       : 16
+#      FDCE                        : 993
+#      FDE                         : 3
+#      FDP                         : 8
+#      FDPE                        : 33
+#      FDR                         : 16
+#      FDRE                        : 4
+# RAMS                             : 19
+#      RAMB16_S18_S18              : 1
+#      RAMB16_S1_S1                : 15
+#      RAMB16_S36_S36              : 3
+# Clock Buffers                    : 5
+#      BUFG                        : 4
+#      BUFGP                       : 1
+# IO Buffers                       : 92
+#      IBUF                        : 14
+#      IOBUF                       : 16
+#      OBUF                        : 62
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                     2198  out of   4656    47%  
+ Number of Slice Flip Flops:           1671  out of   9312    17%  
+ Number of 4 input LUTs:               3665  out of   9312    39%  
+ Number of IOs:                          96
+ Number of bonded IOBs:                  93  out of    232    40%  
+ Number of BRAMs:                        19  out of     20    95%  
+ Number of GCLKs:                         5  out of     24    20%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                 | Load  |
+-----------------------------------+-------------------------------------------------------------------------------------------------------+-------+
+clk50                              | BUFGP                                                                                                 | 99    |
+u1/IMem/BU2/dbiterr                | NONE(u1/IMem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp36x36.ram)      | 1     |
+u1/clkCPU1                         | BUFG                                                                                                  | 1438  |
+p5/slowClock1                      | BUFG                                                                                                  | 27    |
+p4/clk4001                         | BUFG                                                                                                  | 120   |
+p3/clk251                          | BUFG                                                                                                  | 22    |
+p3/u1/fontMem/BU2/dbiterr          | NONE(p3/u1/fontMem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram)| 1     |
+-----------------------------------+-------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+-------------------------+-------+
+Control Signal                     | Buffer(FF name)         | Load  |
+-----------------------------------+-------------------------+-------+
+reset_IBUF_1(reset_IBUF_1:O)       | NONE(u0/WB_Data_0)      | 414   |
+reset_IBUF_2(reset_IBUF_2:O)       | NONE(u0/MEM_ALUOverflow)| 414   |
+reset_IBUF_3(reset_IBUF_3:O)       | NONE(p5/slowClock)      | 414   |
+reset                              | IBUF                    | 406   |
+-----------------------------------+-------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 15.444ns (Maximum Frequency: 64.750MHz)
+   Minimum input arrival time before clock: 13.460ns
+   Maximum output required time after clock: 14.135ns
+   Maximum combinational path delay: 9.709ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50'
+  Clock period: 15.444ns (frequency: 64.750MHz)
+  Total number of paths / destination ports: 2020 / 325
+-------------------------------------------------------------------------
+Delay:               7.722ns (Levels of Logic = 5)
+  Source:            p3/u1/fontMem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram (RAM)
+  Destination:       p3/u2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[14].ram.r/s3_noinit.ram/dpram.dp1x1.ram (RAM)
+  Source Clock:      clk50 falling
+  Destination Clock: clk50 rising
+
+  Data Path: p3/u1/fontMem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram to p3/u2/BU2/U0/blk_mem_generator/valid.cstr/ramloop[14].ram.r/s3_noinit.ram/dpram.dp1x1.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S18_S18:CLKA->DOA0    1   2.800   0.499  U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram (douta(0))
+     end scope: 'BU2'
+     end scope: 'p3/u1/fontMem'
+     LUT3:I1->O            1   0.704   0.000  p3/u1/Mmux__COND_1_5_f5_F (N1111)
+     MUXF5:I0->O           1   0.321   0.424  p3/u1/Mmux__COND_1_5_f5 (p3/u1/Mmux__COND_1_5_f5)
+     LUT4:I3->O           15   0.704   1.017  p3/u1/writeMem71 (p3/writeMem)
+     begin scope: 'p3/u2'
+     begin scope: 'BU2'
+     RAMB16_S1_S1:WEA          1.253          U0/blk_mem_generator/valid.cstr/ramloop[14].ram.r/s3_noinit.ram/dpram.dp1x1.ram
+    ----------------------------------------
+    Total                      7.722ns (5.782ns logic, 1.940ns route)
+                                       (74.9% logic, 25.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u1/clkCPU1'
+  Clock period: 15.385ns (frequency: 64.997MHz)
+  Total number of paths / destination ports: 253273 / 2346
+-------------------------------------------------------------------------
+Delay:               15.385ns (Levels of Logic = 14)
+  Source:            u0/EX_RegC_0 (FF)
+  Destination:       u0/MEM_EXOut_9 (FF)
+  Source Clock:      u1/clkCPU1 rising
+  Destination Clock: u1/clkCPU1 rising
+
+  Data Path: u0/EX_RegC_0 to u0/MEM_EXOut_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  u0/EX_RegC_0 (u0/EX_RegC_0)
+     LUT3_D:I0->O          1   0.704   0.424  u0/mux210_SW0 (N419)
+     LUT4:I3->O            1   0.704   0.000  u0/mux2101 (u0/mux210)
+     MUXCY:S->O            1   0.464   0.000  u0/alu/Neg/Madd_y_cy<0> (u0/alu/Neg/Madd_y_cy<0>)
+     XORCY:CI->O          48   0.804   1.302  u0/alu/Neg/Madd_y_xor<1> (u0/alu/negb<1>)
+     LUT3:I2->O            3   0.704   0.610  u0/alu/shifter/r<10>251 (u0/alu/shifter/r<10>_bdd46)
+     LUT3:I1->O            1   0.704   0.455  u0/alu/shifter/r<1>51 (u0/alu/shifter/r<1>_bdd3)
+     LUT3:I2->O            2   0.704   0.451  u0/alu/shifter/r<5>3 (u0/alu/shifter/r<5>_bdd2)
+     LUT4:I3->O            1   0.704   0.000  u0/alu/shifter/r<9>194_F (N765)
+     MUXF5:I0->O           1   0.321   0.424  u0/alu/shifter/r<9>194 (u0/alu/shifter/r<9>194)
+     LUT4:I3->O            1   0.704   0.424  u0/alu/shifter/r<9>1123 (u0/alu/shifterr<9>)
+     LUT4:I3->O            1   0.704   0.000  u0/alu/Mmux_r_563 (u0/alu/Mmux_r_563)
+     MUXF5:I1->O           1   0.321   0.000  u0/alu/Mmux_r_4_f5_30 (u0/alu/Mmux_r_4_f531)
+     MUXF6:I0->O           4   0.521   0.587  u0/alu/Mmux_r_2_f6_30 (u0/alu/r<9>1)
+     INV:I->O              1   0.704   0.420  u0/alu/r<9>_inv1_INV_0 (u0/aluout<9>)
+     FDC:D                     0.308          u0/MEM_EXOut_9
+    ----------------------------------------
+    Total                     15.385ns (9.666ns logic, 5.719ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'p5/slowClock1'
+  Clock period: 6.497ns (frequency: 153.917MHz)
+  Total number of paths / destination ports: 190 / 46
+-------------------------------------------------------------------------
+Delay:               6.497ns (Levels of Logic = 5)
+  Source:            p5/u0/shiftReg_7 (FF)
+  Destination:       p5/state_FSM_FFd2 (FF)
+  Source Clock:      p5/slowClock1 rising
+  Destination Clock: p5/slowClock1 rising
+
+  Data Path: p5/u0/shiftReg_7 to p5/state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.591   0.762  p5/u0/shiftReg_7 (p5/u0/shiftReg_7)
+     LUT4:I0->O            4   0.704   0.762  p5/state_FSM_FFd1-In1129 (p5/state_FSM_FFd1-In1129)
+     LUT2:I0->O            2   0.704   0.482  p5/state_FSM_FFd1-In1142 (p5/state_FSM_N6)
+     LUT4:I2->O            1   0.704   0.455  p5/state_FSM_FFd2-In21 (p5/state_FSM_FFd2-In21)
+     LUT3:I2->O            1   0.704   0.000  p5/state_FSM_FFd2-In61_G (N1204)
+     MUXF5:I1->O           1   0.321   0.000  p5/state_FSM_FFd2-In61 (p5/state_FSM_FFd2-In)
+     FDC:D                     0.308          p5/state_FSM_FFd2
+    ----------------------------------------
+    Total                      6.497ns (4.036ns logic, 2.461ns route)
+                                       (62.1% logic, 37.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'p4/clk4001'
+  Clock period: 6.963ns (frequency: 143.616MHz)
+  Total number of paths / destination ports: 782 / 179
+-------------------------------------------------------------------------
+Delay:               6.963ns (Levels of Logic = 5)
+  Source:            p4/u0/delayCounter_1 (FF)
+  Destination:       p4/u0/delayCounter_5 (FF)
+  Source Clock:      p4/clk4001 rising
+  Destination Clock: p4/clk4001 rising
+
+  Data Path: p4/u0/delayCounter_1 to p4/u0/delayCounter_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.591   0.762  p4/u0/delayCounter_1 (p4/u0/delayCounter_1)
+     LUT4:I0->O            4   0.704   0.666  p4/u0/delayCounter_mux0000<4>11 (p4/u0/N5)
+     LUT4:I1->O            7   0.704   0.787  p4/u0/delayCounter_mux0000<7>11 (p4/u0/N61)
+     LUT2:I1->O            5   0.704   0.712  p4/u0/delayDone1 (p4/u0/delayDone)
+     LUT4:I1->O            1   0.704   0.000  p4/u0/delayCounter_mux0000<5>1 (p4/u0/delayCounter_mux0000<5>1)
+     MUXF5:I0->O           1   0.321   0.000  p4/u0/delayCounter_mux0000<5>_f5 (p4/u0/delayCounter_mux0000<5>)
+     FDC:D                     0.308          p4/u0/delayCounter_5
+    ----------------------------------------
+    Total                      6.963ns (4.036ns logic, 2.927ns route)
+                                       (58.0% logic, 42.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'p3/clk251'
+  Clock period: 8.799ns (frequency: 113.649MHz)
+  Total number of paths / destination ports: 561 / 32
+-------------------------------------------------------------------------
+Delay:               8.799ns (Levels of Logic = 6)
+  Source:            p3/u0/hCount_3 (FF)
+  Destination:       p3/u0/vCount_9 (FF)
+  Source Clock:      p3/clk251 rising
+  Destination Clock: p3/clk251 rising
+
+  Data Path: p3/u0/hCount_3 to p3/u0/vCount_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.706  p3/u0/hCount_3 (p3/u0/hCount_3)
+     LUT4:I0->O            1   0.704   0.000  p3/u0/hHitMax11 (p3/u0/hHitMax1)
+     MUXF5:I1->O           2   0.321   0.482  p3/u0/hHitMax1_f5 (p3/u0/N3)
+     LUT3:I2->O            1   0.704   0.424  p3/u0/hHitMax_SW0 (N52)
+     LUT4:I3->O           22   0.704   1.339  p3/u0/hHitMax (p3/u0/hHitMax)
+     LUT4:I0->O           11   0.704   1.108  p3/u0/vSync_mux000025 (p3/u0/N4)
+     LUT4:I0->O            1   0.704   0.000  p3/u0/vSync_mux000094 (p3/u0/vSync_mux0000)
+     FDP:D                     0.308          p3/u0/vSync
+    ----------------------------------------
+    Total                      8.799ns (4.740ns logic, 4.059ns route)
+                                       (53.9% logic, 46.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk50'
+  Total number of paths / destination ports: 39 / 39
+-------------------------------------------------------------------------
+Offset:              6.771ns (Levels of Logic = 6)
+  Source:            switches<0> (PAD)
+  Destination:       p3/u1/fontMem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram (RAM)
+  Destination Clock: clk50 falling
+
+  Data Path: switches<0> to p3/u1/fontMem/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.499  switches_0_IBUF (switches_0_IBUF)
+     LUT3_L:I1->LO         1   0.704   0.104  portData<0>LogicTrst26 (portData<0>LogicTrst26)
+     LUT4:I3->O            2   0.704   0.482  portData<0>LogicTrst77 (portData<0>LogicTrst77)
+     LUT3:I2->O            9   0.704   0.855  portData<0>LogicTrst101 (portData<0>)
+     LUT3:I2->O            1   0.704   0.420  p3/char<0>1 (p3/char<0>)
+     begin scope: 'p3/u1/fontMem'
+     begin scope: 'BU2'
+     RAMB16_S18_S18:ADDRA3        0.377          U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp18x18.ram
+    ----------------------------------------
+    Total                      6.771ns (4.411ns logic, 2.360ns route)
+                                       (65.1% logic, 34.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u1/clkCPU1'
+  Total number of paths / destination ports: 995 / 579
+-------------------------------------------------------------------------
+Offset:              13.460ns (Levels of Logic = 6)
+  Source:            reset (PAD)
+  Destination:       u0/REG_PC_31 (FF)
+  Destination Clock: u1/clkCPU1 rising
+
+  Data Path: reset to u0/REG_PC_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           414   1.218   1.383  reset_IBUF (reset_IBUF)
+     BUF:I->O            415   0.704   1.558  reset_IBUF_3 (reset_IBUF_3)
+     LUT4:I0->O           89   0.704   1.315  u0/i0/interuptOut15 (u0/interuptOccurs)
+     LUT3:I2->O          204   0.704   1.352  u0/c0/interuptOut1 (u0/interupt)
+     LUT3:I2->O           33   0.704   1.298  u0/pcc/EX_Mask1 (u0/exmask)
+     LUT4:I2->O           32   0.704   1.262  u0/REG_PC_not00011 (u0/REG_PC_not0001)
+     FDCE:CE                   0.555          u0/REG_PC_0
+    ----------------------------------------
+    Total                     13.460ns (5.293ns logic, 8.167ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'p5/slowClock1'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              4.183ns (Levels of Logic = 2)
+  Source:            psclk (PAD)
+  Destination:       p5/u0/count_3 (FF)
+  Destination Clock: p5/slowClock1 rising
+
+  Data Path: psclk to p5/u0/count_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  psclk_IBUF (psclk_IBUF)
+     LUT2:I0->O           14   0.704   1.000  p5/u0/negEdge1 (p5/u0/negEdge)
+     FDCE:CE                   0.555          p5/u0/shiftReg_1
+    ----------------------------------------
+    Total                      4.183ns (2.477ns logic, 1.706ns route)
+                                       (59.2% logic, 40.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'p4/clk4001'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              3.038ns (Levels of Logic = 2)
+  Source:            spiMISO (PAD)
+  Destination:       p4/u0/u0/u1/received_0 (FF)
+  Destination Clock: p4/clk4001 rising
+
+  Data Path: spiMISO to p4/u0/u0/u1/received_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.218   0.808  spiMISO_IBUF (spiMISO_IBUF)
+     LUT3:I0->O            1   0.704   0.000  p4/u0/u0/u1/received_mux0000<7>1 (p4/u0/u0/u1/received_mux0000<7>)
+     FDCE:D                    0.308          p4/u0/u0/u1/received_0
+    ----------------------------------------
+    Total                      3.038ns (2.230ns logic, 0.808ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'p3/clk251'
+  Total number of paths / destination ports: 50 / 10
+-------------------------------------------------------------------------
+Offset:              8.955ns (Levels of Logic = 4)
+  Source:            p3/u0/vCount_8 (FF)
+  Destination:       color<7> (PAD)
+  Source Clock:      p3/clk251 rising
+
+  Data Path: p3/u0/vCount_8 to color<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.591   0.844  p3/u0/vCount_8 (p3/u0/vCount_8)
+     LUT3:I0->O            1   0.704   0.424  p3/u0/draw_SW0 (N30)
+     LUT4:I3->O           20   0.704   1.181  p3/u0/draw (p3/draw)
+     LUT2:I1->O            3   0.704   0.531  p3/red1 (color_5_OBUF)
+     OBUF:I->O                 3.272          color_7_OBUF (color<7>)
+    ----------------------------------------
+    Total                      8.955ns (5.975ns logic, 2.980ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk50'
+  Total number of paths / destination ports: 3544 / 49
+-------------------------------------------------------------------------
+Offset:              12.085ns (Levels of Logic = 28)
+  Source:            u1/counter_1 (FF)
+  Destination:       MT_ADDR<22> (PAD)
+  Source Clock:      clk50 rising
+
+  Data Path: u1/counter_1 to MT_ADDR<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.591   1.136  u1/counter_1 (u1/counter_1)
+     LUT4:I0->O           46   0.704   1.302  u1/dataHigh1 (u1/dataHigh)
+     LUT4:I2->O            1   0.704   0.000  u1/Mmux_memoryAddress2_SW22 (u1/Mmux_memoryAddress2_SW21)
+     MUXF5:I0->O           1   0.321   0.424  u1/Mmux_memoryAddress2_SW2_f5 (N943)
+     LUT4:I3->O            1   0.704   0.000  u1/Madd_MT_ADDR_lut<0> (u1/Madd_MT_ADDR_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  u1/Madd_MT_ADDR_cy<0> (u1/Madd_MT_ADDR_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<1> (u1/Madd_MT_ADDR_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<2> (u1/Madd_MT_ADDR_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<3> (u1/Madd_MT_ADDR_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<4> (u1/Madd_MT_ADDR_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<5> (u1/Madd_MT_ADDR_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<6> (u1/Madd_MT_ADDR_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<7> (u1/Madd_MT_ADDR_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<8> (u1/Madd_MT_ADDR_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<9> (u1/Madd_MT_ADDR_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<10> (u1/Madd_MT_ADDR_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<11> (u1/Madd_MT_ADDR_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<12> (u1/Madd_MT_ADDR_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<13> (u1/Madd_MT_ADDR_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<14> (u1/Madd_MT_ADDR_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<15> (u1/Madd_MT_ADDR_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<16> (u1/Madd_MT_ADDR_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<17> (u1/Madd_MT_ADDR_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<18> (u1/Madd_MT_ADDR_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<19> (u1/Madd_MT_ADDR_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  u1/Madd_MT_ADDR_cy<20> (u1/Madd_MT_ADDR_cy<20>)
+     MUXCY:CI->O           0   0.059   0.000  u1/Madd_MT_ADDR_cy<21> (u1/Madd_MT_ADDR_cy<21>)
+     XORCY:CI->O           1   0.804   0.420  u1/Madd_MT_ADDR_xor<22> (MT_ADDR_22_OBUF)
+     OBUF:I->O                 3.272          MT_ADDR_22_OBUF (MT_ADDR<22>)
+    ----------------------------------------
+    Total                     12.085ns (8.803ns logic, 3.282ns route)
+                                       (72.8% logic, 27.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'p4/clk4001'
+  Total number of paths / destination ports: 168 / 2
+-------------------------------------------------------------------------
+Offset:              9.857ns (Levels of Logic = 8)
+  Source:            p4/u0/u0/u0/count_4 (FF)
+  Destination:       spiMOSI (PAD)
+  Source Clock:      p4/clk4001 rising
+
+  Data Path: p4/u0/u0/u0/count_4 to spiMOSI
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             25   0.591   1.435  p4/u0/u0/u0/count_4 (p4/u0/u0/u0/count_4)
+     LUT3:I0->O            1   0.704   0.000  p4/u0/u0/u0/Mmux__varindex0000_9 (p4/u0/u0/u0/Mmux__varindex0000_9)
+     MUXF5:I1->O           1   0.321   0.000  p4/u0/u0/u0/Mmux__varindex0000_8_f5 (p4/u0/u0/u0/Mmux__varindex0000_8_f5)
+     MUXF6:I1->O           1   0.521   0.000  p4/u0/u0/u0/Mmux__varindex0000_7_f6 (p4/u0/u0/u0/Mmux__varindex0000_7_f6)
+     MUXF7:I1->O           1   0.521   0.000  p4/u0/u0/u0/Mmux__varindex0000_6_f7 (p4/u0/u0/u0/Mmux__varindex0000_6_f7)
+     MUXF8:I1->O           2   0.521   0.526  p4/u0/u0/u0/Mmux__varindex0000_5_f8 (p4/u0/u0/u0/Mmux__varindex0000_5_f8)
+     LUT3:I1->O            1   0.704   0.000  p4/u0/u0/u0/SDout1 (p4/u0/u0/u0/SDout)
+     MUXF5:I1->O           1   0.321   0.420  p4/u0/u0/u0/SDout_f5 (spiMOSI_OBUF)
+     OBUF:I->O                 3.272          spiMOSI_OBUF (spiMOSI)
+    ----------------------------------------
+    Total                      9.857ns (7.476ns logic, 2.381ns route)
+                                       (75.8% logic, 24.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u1/clkCPU1'
+  Total number of paths / destination ports: 55228 / 52
+-------------------------------------------------------------------------
+Offset:              14.135ns (Levels of Logic = 30)
+  Source:            p4/index_0 (FF)
+  Destination:       MT_ADDR<22> (PAD)
+  Source Clock:      u1/clkCPU1 rising
+
+  Data Path: p4/index_0 to MT_ADDR<22>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.591   0.666  p4/index_0 (p4/index_0)
+     LUT2:I1->O            1   0.704   0.000  p4/Madd_writeAddress_lut<0> (p4/Madd_writeAddress_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  p4/Madd_writeAddress_cy<0> (p4/Madd_writeAddress_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<1> (p4/Madd_writeAddress_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<2> (p4/Madd_writeAddress_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<3> (p4/Madd_writeAddress_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<4> (p4/Madd_writeAddress_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<5> (p4/Madd_writeAddress_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<6> (p4/Madd_writeAddress_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<7> (p4/Madd_writeAddress_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<8> (p4/Madd_writeAddress_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<9> (p4/Madd_writeAddress_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<10> (p4/Madd_writeAddress_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<11> (p4/Madd_writeAddress_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<12> (p4/Madd_writeAddress_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<13> (p4/Madd_writeAddress_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<14> (p4/Madd_writeAddress_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<15> (p4/Madd_writeAddress_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<16> (p4/Madd_writeAddress_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<17> (p4/Madd_writeAddress_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<18> (p4/Madd_writeAddress_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  p4/Madd_writeAddress_cy<19> (p4/Madd_writeAddress_cy<19>)
+     XORCY:CI->O           3   0.804   0.566  p4/Madd_writeAddress_xor<20> (sdWriteAddress<20>)
+     LUT3:I2->O            1   0.704   0.000  _mux0000<20>11 (_mux0000<20>1)
+     MUXCY:S->O            1   0.464   0.000  u1/Madd_memoryAddress_addsub0000_cy<20> (u1/Madd_memoryAddress_addsub0000_cy<20>)
+     XORCY:CI->O           1   0.804   0.420  u1/Madd_memoryAddress_addsub0000_xor<21> (u1/memoryAddress_addsub0000<21>)
+     MUXF5:S->O            1   0.739   0.424  u1/Mmux_memoryAddress28_SW2_f5 (N967)
+     LUT4:I3->O            1   0.704   0.000  u1/Madd_MT_ADDR_lut<21> (u1/Madd_MT_ADDR_lut<21>)
+     MUXCY:S->O            0   0.464   0.000  u1/Madd_MT_ADDR_cy<21> (u1/Madd_MT_ADDR_cy<21>)
+     XORCY:CI->O           1   0.804   0.420  u1/Madd_MT_ADDR_xor<22> (MT_ADDR_22_OBUF)
+     OBUF:I->O                 3.272          MT_ADDR_22_OBUF (MT_ADDR<22>)
+    ----------------------------------------
+    Total                     14.135ns (11.639ns logic, 2.496ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 112 / 7
+-------------------------------------------------------------------------
+Delay:               9.709ns (Levels of Logic = 5)
+  Source:            lowHigh (PAD)
+  Destination:       ledOut<7> (PAD)
+
+  Data Path: lowHigh to ledOut<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  lowHigh_IBUF (lowHigh_IBUF)
+     LUT4:I0->O            1   0.704   0.595  p0/u0/nibble<3>12 (p0/u0/nibble<3>12)
+     LUT4:I0->O            7   0.704   0.883  p0/u0/nibble<3>85 (p0/u0/nibble<3>)
+     LUT4:I0->O            1   0.704   0.420  p0/u0/Mrom_LedOut31 (ledOut_3_OBUF)
+     OBUF:I->O                 3.272          ledOut_3_OBUF (ledOut<3>)
+    ----------------------------------------
+    Total                      9.709ns (6.602ns logic, 3.107ns route)
+                                       (68.0% logic, 32.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 69.00 secs
+Total CPU time to Xst completion: 69.73 secs
+ 
+--> 
+
+Total memory usage is 295176 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  200 (   0 filtered)
+Number of infos    :   37 (   0 filtered)
+

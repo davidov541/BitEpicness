@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="1" owner="projectmgr" name="BitEpicness" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNode>/Adder16b</ClosedNode>
+         <ClosedNode>/BitEpicness/alu - ALU</ClosedNode>
+         <ClosedNode>/BitEpicness/alu - ALU/adder - Adder16b</ClosedNode>
+         <ClosedNode>/BitEpicness/alu - ALU/comp - Comparator16b</ClosedNode>
+         <ClosedNode>/BitEpicness/alu - ALU/difference - Adder16b</ClosedNode>
+         <ClosedNode>/BitEpicness/memory - MainMemory</ClosedNode>
+         <ClosedNode>/InstructionMemory</ClosedNode>
+         <ClosedNode>/Main/p0 - SevenSegDisplay</ClosedNode>
+         <ClosedNode>/Main/p2 - SwitchInput</ClosedNode>
+         <ClosedNode>/Main/p3 - VGA</ClosedNode>
+         <ClosedNode>/Main/p4 - SDCard</ClosedNode>
+         <ClosedNode>/Main/p5 - Keyboard</ClosedNode>
+         <ClosedNode>/Main/p6 - Touchscreen</ClosedNode>
+         <ClosedNode>/Main/u0 - BitEpicness</ClosedNode>
+         <ClosedNode>/Main/u0 - BitEpicness/alu - ALU/adder - Adder16b</ClosedNode>
+         <ClosedNode>/Main/u0 - BitEpicness/alu - ALU/difference - Adder16b</ClosedNode>
+         <ClosedNode>/SendPS2</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Main (D:/Code/Verilog/BitEpicness/Main.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000151000000020000000000000000000000000000000064ffffffff000000810000000000000002000001510000000100000000000000000000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Main (D:/Code/Verilog/BitEpicness/Main.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000178000000010000000100000000000000000000000064ffffffff000000810000000000000001000001780000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes/>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff000000810000000000000004000000860000000100000000000000d70000000100000000000000660000000100000000000001cf0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Adder1b.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNode>/BitEpicness</ClosedNode>
+         <ClosedNode>/BitEpicness_TB/uut - BitEpicness/alu - ALU</ClosedNode>
+         <ClosedNode>/InstructionMemory</ClosedNode>
+         <ClosedNode>/Main</ClosedNode>
+         <ClosedNode>/Main_TB/uut - Main/p0 - SevenSegDisplay</ClosedNode>
+         <ClosedNode>/Main_TB/uut - Main/p2 - SwitchInput</ClosedNode>
+         <ClosedNode>/Main_TB/uut - Main/p3 - VGA</ClosedNode>
+         <ClosedNode>/Main_TB/uut - Main/p3 - VGA/u1 - GPU</ClosedNode>
+         <ClosedNode>/Main_TB/uut - Main/p4 - SDCard</ClosedNode>
+         <ClosedNode>/Main_TB/uut - Main/p5 - Keyboard</ClosedNode>
+         <ClosedNode>/Main_TB/uut - Main/p6 - Touchscreen</ClosedNode>
+         <ClosedNode>/Main_TB/uut - Main/u0 - BitEpicness/alu - ALU</ClosedNode>
+         <ClosedNode>/Main_TB/uut - Main/u0 - BitEpicness/alu - ALU/adder - Adder16b</ClosedNode>
+         <ClosedNode>/Main_TB/uut - Main/u0 - BitEpicness/alu - ALU/difference - Adder16b</ClosedNode>
+         <ClosedNode>/Main_TB/uut - Main/u0 - BitEpicness/i0 - InteruptHandler</ClosedNode>
+         <ClosedNode>/Main_TB/uut - Main/u1 - MemoryManager</ClosedNode>
+         <ClosedNode>/Test_ALU</ClosedNode>
+         <ClosedNode>/Test_ALU/uut - ALU/adder - Adder16b</ClosedNode>
+         <ClosedNode>/Test_ALU/uut - ALU/comp - Comparator16b</ClosedNode>
+         <ClosedNode>/Test_ALU/uut - ALU/difference - Adder16b</ClosedNode>
+         <ClosedNode>/Test_Adder16b</ClosedNode>
+         <ClosedNode>/Test_Adder16b/uut - Adder16b</ClosedNode>
+         <ClosedNode>/Test_Adder1b</ClosedNode>
+         <ClosedNode>/Test_BitEpicness</ClosedNode>
+         <ClosedNode>/Test_BitEpicness/uut - BitEpicness/alu - ALU/adder - Adder16b</ClosedNode>
+         <ClosedNode>/Test_BitEpicness/uut - BitEpicness/alu - ALU/comp - Comparator16b</ClosedNode>
+         <ClosedNode>/Test_BitEpicness/uut - BitEpicness/alu - ALU/difference - Adder16b</ClosedNode>
+         <ClosedNode>/Test_BitEpicness/uut - BitEpicness/memory - MainMemory</ClosedNode>
+         <ClosedNode>/Test_MainMemory</ClosedNode>
+         <ClosedNode>/Test_PCControl</ClosedNode>
+         <ClosedNode>/Test_RegisterFile</ClosedNode>
+         <ClosedNode>/Test_Shifter</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>c0 - Coprocessor (D:/Code/Verilog/BitEpicness/Coprocessor.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000016c000000020000000000000000000000000000000064ffffffff0000008100000000000000020000016c0000000100000000000000000000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>c0 - Coprocessor (D:/Code/Verilog/BitEpicness/Coprocessor.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Add Existing Source</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000178000000010000000100000000000000000000000064ffffffff000000810000000000000001000001780000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Add Existing Source</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001570000017101000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes/>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000178000000010000000100000000000000000000000064ffffffff000000810000000000000001000001780000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Add Existing Source</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000178000000010000000100000000000000000000000064ffffffff000000810000000000000001000001780000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Add Existing Source</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes/>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000178000000010000000100000000000000000000000064ffffffff000000810000000000000001000001780000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes/>
+      <SelectedItems>
+         <SelectedItem>Regenerate Core</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000178000000010000000100000000000000000000000064ffffffff000000810000000000000001000001780000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Regenerate Core</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes/>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes/>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostTransSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNode>/DebounceTest</ClosedNode>
+         <ClosedNode>/PulserTest</ClosedNode>
+         <ClosedNode>/Test_ALU</ClosedNode>
+         <ClosedNode>/Test_Adder16b</ClosedNode>
+         <ClosedNode>/Test_Adder1b</ClosedNode>
+         <ClosedNode>/Test_BitEpicness</ClosedNode>
+         <ClosedNode>/Test_MainMemory</ClosedNode>
+         <ClosedNode>/Test_PCControl</ClosedNode>
+         <ClosedNode>/Test_RegisterFile</ClosedNode>
+         <ClosedNode>/Test_Shifter</ClosedNode>
+         <ClosedNode>PROJECT</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>DebounceTest (D:/Code/Verilog/BitEpicness/DebounceTest.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000010c000000020000000000000000000000000000000064ffffffff0000008100000000000000020000010c0000000100000000000000000000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>DebounceTest (D:/Code/Verilog/BitEpicness/DebounceTest.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostTransSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000178000000010000000100000000000000000000000064ffffffff000000810000000000000001000001780000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostTransSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes/>
+      <SelectedItems>
+         <SelectedItem>Add Existing Source</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000178000000010000000100000000000000000000000064ffffffff000000810000000000000001000001780000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Add Existing Source</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Add Existing Source</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000178000000010000000100000000000000000000000064ffffffff000000810000000000000001000001780000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Add Existing Source</CurrentItem>
+   </ItemView>
+</Project>

@@ -1,0 +1,14 @@
+[Inputs]
+=Instruction[15:0]=
+[Outputs]
+=OpCode[4:0]=
+=FuncCode[2:0]=
+=ReadReg1[3:0]=
+=ReadReg2[3:0]=
+=ReadReg3[3:0]=
+=Imm[6:0]=
+=JTarget[10:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel InstructionTranslate
+

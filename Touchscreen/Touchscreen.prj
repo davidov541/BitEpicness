@@ -1,0 +1,3 @@
+verilog work "LEDDriver.v"
+vhdl work "AD1RefComp.vhd"
+verilog work "Touchscreen.v"

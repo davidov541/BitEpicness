@@ -1,0 +1,16 @@
+Release 12.2 - WebTalk (M.63c)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Project Information
+--------------------
+ProjectID=B84577AD918B4C1B96696C918462F637
+ProjectIteration=12
+
+WebTalk Summary
+----------------
+INFO:WebTalk:2 - WebTalk is enabled.
+
+INFO:WebTalk:8 - WebTalk Install setting is ON.
+INFO:WebTalk:6 - WebTalk User setting is ON.
+
+INFO:WebTalk:4 - D:/Code/Verilog/MicTest/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2011-02-01T16:19:58.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/12.2/ISE_DS/ISE/data/reports/webtalk_introduction.html

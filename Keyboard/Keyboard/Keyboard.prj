@@ -1,0 +1,4 @@
+verilog work "OddParity.v"
+verilog work "ReadPS2.v"
+verilog work "LEDDriver.v"
+verilog work "Keyboard.v"

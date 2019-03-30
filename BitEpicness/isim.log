@@ -1,0 +1,44 @@
+ISim log file
+Running: D:\Code\Verilog\BitEpicness\Main_TB_isim_beh.exe -gui -tclbatch isim.cmd -wdb D:/Code/Verilog/BitEpicness/Main_TB_isim_beh.wdb 
+ISim M.63c (signature 0xb869381d)
+This is a Full version of ISim.
+WARNING: File "D:/Code/Verilog/BitEpicness/MemoryManager.v" Line 7.  For instance u1/MMem/, width 16 of formal port dina is not equal to width 32 of actual signal dDataIn.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module Main_TB.uut.u1.IMem.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator CORE Generator module Main_TB.uut.u1.MMem.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module Main_TB.uut.p3.u1.fontMem.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator CORE Generator module Main_TB.uut.p3.u2.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator CORE Generator module Main_TB.uut.p4.u2.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module Main_TB.uut.p5.u1.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Card inserted :P
+
+Finished circuit initialization process.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module Main_TB.uut.u1.IMem.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator CORE Generator module Main_TB.uut.u1.MMem.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module Main_TB.uut.p3.u1.fontMem.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator CORE Generator module Main_TB.uut.p3.u2.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Block Memory Generator CORE Generator module Main_TB.uut.p4.u2.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator CORE Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator CORE Generator module Main_TB.uut.p5.u1.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Card inserted :P
+
+Finished circuit initialization process.
+Stopped at time : 3020 ns : File "D:/Code/Verilog/BitEpicness/Main_TB.v" Line 100

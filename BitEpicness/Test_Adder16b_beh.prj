@@ -1,0 +1,4 @@
+verilog work "Adder1b.v"
+verilog work "Adder16b.v"
+verilog work "Test_Adder16b.v"
+verilog work "C:/Xilinx/12.2/ISE_DS/ISE//verilog/src/glbl.v"

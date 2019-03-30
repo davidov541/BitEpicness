@@ -1,0 +1,5 @@
+verilog work "LEDDriver.v"
+vhdl work "AD1RefComp.vhd"
+verilog work "Touchscreen.v"
+verilog work "Touch_TB.v"
+verilog work "C:/Xilinx/12.2/ISE_DS/ISE//verilog/src/glbl.v"

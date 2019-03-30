@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Code\Verilog\BitEpicness\Main.ncd
+OUTFILE=D:\Code\Verilog\BitEpicness\Main.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\Code\Verilog\BitEpicness
+LICENSE=ISE
+USER_INFO=174114502_174114503_174423801

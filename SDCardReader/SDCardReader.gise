@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="SDCardReader.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="SDCard.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SDCard.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="SDCard.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="SDCard.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SDCard.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="SDCard.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SDCard.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="SDCard.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="SDCard.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="SDCard.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SDCard.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="SDCard.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SDCard.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SDCard.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="SDCard.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="SDCard.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="SDCard.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="SDCard.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="SDCard.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SDCard.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="SDCardReader.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="SDCardReader.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="SDCardReader.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="SDCardReader.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SDCardReader.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="SDCardReader.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SDCardReader.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="SDCardReader.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="SDCardReader.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="SDCardReader.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SDCardReader.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="SDCardReader.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SDCardReader.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SDCardReader.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="SDCardReader.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="SDCardReader.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="SDCardReader.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="SDCardReader.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="SDCardReader.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SDCardReader.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SDCardReader_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="SDCardReader_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="SDCardReader_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="SDCardReader_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="SDCardReader_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="SDCardReader_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SDCardReader_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SDCardReader_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="SDCardReader_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="SDCardReader_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SDCardReader_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SDCardReader_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SDCardReader_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="SDCardReader_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SDCardReader_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SDCard_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="SDCard_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="SDCard_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="SDCard_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="SDCard_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="SDCard_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SDCard_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SDCard_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="SDCard_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="SDCard_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SDCard_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="SDCard_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SDCard_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="SDCard_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SDCard_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SD_TB_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SD_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="SD_TB_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SDcard_TB_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SDcard_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="SDcard_TB_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="sdcard.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="sdcard.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="sdcard.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="sdcardreader.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="sdcardreader.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="sdcardreader.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1298749025" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1298749025">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1298753029" xil_pn:in_ck="2991956037171836606" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1298753029">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ExecuteCommand.v"/>
+      <outfile xil_pn:name="LEDDriver.v"/>
+      <outfile xil_pn:name="SDCard.v"/>
+      <outfile xil_pn:name="SDCardReader.v"/>
+      <outfile xil_pn:name="SD_TB.v"/>
+      <outfile xil_pn:name="SDcard_TB.v"/>
+      <outfile xil_pn:name="blockReceiveSD.v"/>
+      <outfile xil_pn:name="receiveSD.v"/>
+      <outfile xil_pn:name="sendSD.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1298749025" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2889896387348584483" xil_pn:start_ts="1298749025">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1298749025" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4776711370010585761" xil_pn:start_ts="1298749025">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1298749026" xil_pn:in_ck="-8165369142261739340" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8069972863030963440" xil_pn:start_ts="1298749025">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/SDtempRAM.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/SDtempRAM.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1298753029" xil_pn:in_ck="-9169513469253861378" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1298753029">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ExecuteCommand.v"/>
+      <outfile xil_pn:name="LEDDriver.v"/>
+      <outfile xil_pn:name="SDCard.v"/>
+      <outfile xil_pn:name="SDCardReader.v"/>
+      <outfile xil_pn:name="SD_TB.v"/>
+      <outfile xil_pn:name="SDcard_TB.v"/>
+      <outfile xil_pn:name="blockReceiveSD.v"/>
+      <outfile xil_pn:name="ipcore_dir/SDtempRAM.v"/>
+      <outfile xil_pn:name="receiveSD.v"/>
+      <outfile xil_pn:name="sendSD.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1298753046" xil_pn:in_ck="-9169513469253861378" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6812897342468324037" xil_pn:start_ts="1298753029">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="SDcard_TB_beh.prj"/>
+      <outfile xil_pn:name="SDcard_TB_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1298753047" xil_pn:in_ck="4382324753449154480" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7784546379065988414" xil_pn:start_ts="1298753046">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="SDcard_TB_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1298746190" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1298746189">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1298746190" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8557406660372278614" xil_pn:start_ts="1298746190">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1298746191" xil_pn:in_ck="-8165369142261739340" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8069972863030963440" xil_pn:start_ts="1298746190">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/SDtempRAM.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/SDtempRAM.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1298746191" xil_pn:in_ck="7243979411005882787" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1298746191">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1298746191" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3050291305153514520" xil_pn:start_ts="1298746191">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1298746191" xil_pn:in_ck="7243979411005882787" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1298746191">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1298746191" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2766231712263133798" xil_pn:start_ts="1298746191">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1298785446" xil_pn:in_ck="-2630209877442668188" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7104507294875020695" xil_pn:start_ts="1298785420">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="SDCard.lso"/>
+      <outfile xil_pn:name="SDCard.ngc"/>
+      <outfile xil_pn:name="SDCard.ngr"/>
+      <outfile xil_pn:name="SDCard.prj"/>
+      <outfile xil_pn:name="SDCard.stx"/>
+      <outfile xil_pn:name="SDCard.syr"/>
+      <outfile xil_pn:name="SDCard.xst"/>
+      <outfile xil_pn:name="SDCardReader.ngr"/>
+      <outfile xil_pn:name="SDCardReader.prj"/>
+      <outfile xil_pn:name="SDCard_xst.xrpt"/>
+      <outfile xil_pn:name="SDcard_TB_beh.prj"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1298746223" xil_pn:in_ck="155098904106" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5069202360705067155" xil_pn:start_ts="1298746223">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1298785462" xil_pn:in_ck="162065847338135277" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-5450912578116134637" xil_pn:start_ts="1298785446">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SDCard.bld"/>
+      <outfile xil_pn:name="SDCard.ngd"/>
+      <outfile xil_pn:name="SDCard_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1298785486" xil_pn:in_ck="-5696425904506311859" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1298785462">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SDCard.pcf"/>
+      <outfile xil_pn:name="SDCard_map.map"/>
+      <outfile xil_pn:name="SDCard_map.mrp"/>
+      <outfile xil_pn:name="SDCard_map.ncd"/>
+      <outfile xil_pn:name="SDCard_map.ngm"/>
+      <outfile xil_pn:name="SDCard_map.xrpt"/>
+      <outfile xil_pn:name="SDCard_summary.xml"/>
+      <outfile xil_pn:name="SDCard_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1298785571" xil_pn:in_ck="-1929665603235914305" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1298785486">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SDCard.ncd"/>
+      <outfile xil_pn:name="SDCard.pad"/>
+      <outfile xil_pn:name="SDCard.par"/>
+      <outfile xil_pn:name="SDCard.ptwx"/>
+      <outfile xil_pn:name="SDCard.unroutes"/>
+      <outfile xil_pn:name="SDCard.xpi"/>
+      <outfile xil_pn:name="SDCard_pad.csv"/>
+      <outfile xil_pn:name="SDCard_pad.txt"/>
+      <outfile xil_pn:name="SDCard_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1298785627" xil_pn:in_ck="-9043617418713875077" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1298785571">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SDCard.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="sdcard.bgn"/>
+      <outfile xil_pn:name="sdcard.bit"/>
+      <outfile xil_pn:name="sdcard.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1298435351" xil_pn:in_ck="8594154298691525103" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1298435348">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1298435355" xil_pn:in_ck="8594154298691525103" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="-5450912578116134637" xil_pn:start_ts="1298435354">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1298785571" xil_pn:in_ck="-7553829920242246843" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1298785564">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="SDCard.twr"/>
+      <outfile xil_pn:name="SDCard.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

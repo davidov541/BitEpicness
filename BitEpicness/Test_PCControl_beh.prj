@@ -1,0 +1,3 @@
+verilog work "PCControl.v"
+verilog work "Test_PCControl.v"
+verilog work "C:/Xilinx/12.2/ISE_DS/ISE//verilog/src/glbl.v"

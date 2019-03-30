@@ -1,0 +1,5 @@
+xst -ise "D:/Code/Verilog/BitEpicness/BitEpicness.ise" -intstyle ise -ifn "D:/Code/Verilog/BitEpicness/Adder16b.xst" -ofn "D:/Code/Verilog/BitEpicness/Adder16b.syr" 
+xst -ise "D:/Code/Verilog/BitEpicness/BitEpicness.ise" -intstyle ise -ifn "D:/Code/Verilog/BitEpicness/Adder16b.xst" -ofn "D:/Code/Verilog/BitEpicness/Adder16b.syr" 
+xst -ise "D:/Code/Verilog/BitEpicness/BitEpicness.ise" -intstyle ise -ifn "D:/Code/Verilog/BitEpicness/Adder16b.xst" -ofn "D:/Code/Verilog/BitEpicness/Adder16b.syr" 
+xst -ise "D:/Code/Verilog/BitEpicness/BitEpicness.ise" -intstyle ise -ifn "D:/Code/Verilog/BitEpicness/Adder16b.xst" -ofn "D:/Code/Verilog/BitEpicness/Adder16b.syr" 
+xst -ise "D:/Code/Verilog/BitEpicness/BitEpicness.ise" -intstyle ise -ifn "D:/Code/Verilog/BitEpicness/Adder16b.xst" -ofn "D:/Code/Verilog/BitEpicness/Adder16b.syr" 

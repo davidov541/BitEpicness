@@ -1,0 +1,30 @@
+Command line:
+   SDcard_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  2395
+
+Sat Feb 26 15:44:30 2011
+
+
+ Elaboration Time: 0.218401 sec
+
+ Current Memory Usage: 802.402 Meg
+
+ Total Signals          : 192
+ Total Nets             : 389
+ Total Signal Drivers   : 93
+ Total Blocks           : 24
+ Total Primitive Blocks : 17
+ Total Processes        : 119
+ Total Traceable Variables  : 340
+ Total Scalar Nets and Variables : 22254
+Total Line Count : 553
+Total Line Count : 553
+
+ Total Simulation Time: 1.49761 sec
+
+ Current Memory Usage: 645.116 Meg
+
+Sat Feb 26 15:51:15 2011
+

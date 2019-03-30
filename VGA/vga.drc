@@ -1,0 +1,8 @@
+Release 12.2 Drc M.63c (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Thu Mar 03 00:28:00 2011
+
+drc -z VGA.ncd VGA.pcf
+
+DRC detected 0 errors and 0 warnings.

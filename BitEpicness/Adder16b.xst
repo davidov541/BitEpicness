@@ -1,0 +1,6 @@
+set -tmpdir "D:/Code/Verilog/BitEpicness/xst/projnav.tmp"
+set -xsthdpdir "D:/Code/Verilog/BitEpicness/xst"
+elaborate
+-lso D:/Code/Verilog/BitEpicness/Adder16b.lso
+-ifn Adder16b.prj
+-ifmt mixed

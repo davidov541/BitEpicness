@@ -1,0 +1,14 @@
+[Inputs]
+clk
+Reset
+=OpCode[4:0]=
+=FuncCode[2:0]=
+[Outputs]
+REG
+=EX[11:0]=
+=MEM[6:0]=
+=WB[4:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Control
+

@@ -1,0 +1,30 @@
+Running: C:\Xilinx\12.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/Code/Verilog/Touchscreen/Touch_TB_isim_beh.exe -prj D:/Code/Verilog/Touchscreen/Touch_TB_beh.prj work.Touch_TB work.glbl 
+ISim M.63c (signature 0xb869381d)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file \"D:/Code/Verilog/Touchscreen/LEDDriver.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/Touchscreen/Touchscreen.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/Touchscreen/Touch_TB.v\" into library work
+Analyzing Verilog file \"C:/Xilinx/12.2/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Parsing VHDL file "D:/Code/Verilog/Touchscreen/AD1RefComp.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 112384 KB
+Fuse CPU Usage: 250 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Compiling module LEDDriver
+Compiling module Touchscreen
+Compiling module Touch_TB
+Compiling module glbl
+Compiling architecture ad1 of entity ad1refcomp [ad1refcomp_default]
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Compiled 4 Verilog Units
+Built simulation executable D:/Code/Verilog/Touchscreen/Touch_TB_isim_beh.exe
+Fuse Memory Usage: 121328 KB
+Fuse CPU Usage: 499 ms

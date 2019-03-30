@@ -1,0 +1,159 @@
+--------------------------------------------------------------------------------
+Release 12.2 Trace  (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\12.2\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf ucf.ucf
+
+Design file:              Main.ncd
+Physical constraint file: Main.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2010-06-22)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk50
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+MT_DATA<0>  |    0.797(R)|    1.067(R)|clk50_BUFGP       |   0.000|
+MT_DATA<1>  |    0.988(R)|    1.119(R)|clk50_BUFGP       |   0.000|
+MT_DATA<2>  |    1.447(R)|    0.967(R)|clk50_BUFGP       |   0.000|
+MT_DATA<3>  |    1.083(R)|    0.999(R)|clk50_BUFGP       |   0.000|
+MT_DATA<4>  |    2.094(R)|   -0.045(R)|clk50_BUFGP       |   0.000|
+MT_DATA<5>  |    2.718(R)|   -0.479(R)|clk50_BUFGP       |   0.000|
+MT_DATA<6>  |    1.488(R)|    0.214(R)|clk50_BUFGP       |   0.000|
+MT_DATA<7>  |    2.448(R)|   -0.514(R)|clk50_BUFGP       |   0.000|
+MT_DATA<8>  |    2.076(R)|    1.233(R)|clk50_BUFGP       |   0.000|
+MT_DATA<9>  |    1.162(R)|    0.977(R)|clk50_BUFGP       |   0.000|
+MT_DATA<10> |    1.150(R)|    0.754(R)|clk50_BUFGP       |   0.000|
+MT_DATA<11> |    2.286(R)|   -0.366(R)|clk50_BUFGP       |   0.000|
+MT_DATA<12> |    0.786(R)|    1.036(R)|clk50_BUFGP       |   0.000|
+MT_DATA<13> |    1.142(R)|    0.562(R)|clk50_BUFGP       |   0.000|
+MT_DATA<14> |    2.224(R)|    0.900(R)|clk50_BUFGP       |   0.000|
+MT_DATA<15> |    2.589(R)|    0.042(R)|clk50_BUFGP       |   0.000|
+switches<0> |    5.867(F)|   -3.199(F)|clk50_BUFGP       |   0.000|
+switches<1> |    7.744(F)|   -4.701(F)|clk50_BUFGP       |   0.000|
+switches<2> |    6.333(F)|   -3.572(F)|clk50_BUFGP       |   0.000|
+switches<3> |    6.628(F)|   -3.809(F)|clk50_BUFGP       |   0.000|
+switches<4> |    5.680(F)|   -3.049(F)|clk50_BUFGP       |   0.000|
+switches<5> |    5.824(F)|   -3.165(F)|clk50_BUFGP       |   0.000|
+switches<6> |    6.327(F)|   -3.569(F)|clk50_BUFGP       |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clk50 to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+MT_ADDR<0>  |   14.790(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<1>  |   15.542(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<2>  |   16.034(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<3>  |   16.121(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<4>  |   15.888(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<5>  |   16.309(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<6>  |   16.175(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<7>  |   17.156(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<8>  |   16.948(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<9>  |   17.284(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<10> |   16.866(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<11> |   17.921(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<12> |   17.982(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<13> |   18.364(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<14> |   18.742(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<15> |   18.537(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<16> |   18.267(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<17> |   19.711(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<18> |   18.464(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<19> |   19.375(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<20> |   17.524(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<21> |   19.210(R)|clk50_BUFGP       |   0.000|
+MT_ADDR<22> |   17.877(R)|clk50_BUFGP       |   0.000|
+MT_CE       |   10.525(R)|clk50_BUFGP       |   0.000|
+MT_DATA<0>  |   13.087(R)|clk50_BUFGP       |   0.000|
+MT_DATA<1>  |   13.281(R)|clk50_BUFGP       |   0.000|
+MT_DATA<2>  |   12.209(R)|clk50_BUFGP       |   0.000|
+MT_DATA<3>  |   12.602(R)|clk50_BUFGP       |   0.000|
+MT_DATA<4>  |   12.282(R)|clk50_BUFGP       |   0.000|
+MT_DATA<5>  |   12.760(R)|clk50_BUFGP       |   0.000|
+MT_DATA<6>  |   12.969(R)|clk50_BUFGP       |   0.000|
+MT_DATA<7>  |   13.010(R)|clk50_BUFGP       |   0.000|
+MT_DATA<8>  |   13.171(R)|clk50_BUFGP       |   0.000|
+MT_DATA<9>  |   12.405(R)|clk50_BUFGP       |   0.000|
+MT_DATA<10> |   12.962(R)|clk50_BUFGP       |   0.000|
+MT_DATA<11> |   12.319(R)|clk50_BUFGP       |   0.000|
+MT_DATA<12> |   13.854(R)|clk50_BUFGP       |   0.000|
+MT_DATA<13> |   12.281(R)|clk50_BUFGP       |   0.000|
+MT_DATA<14> |   13.205(R)|clk50_BUFGP       |   0.000|
+MT_DATA<15> |   12.918(R)|clk50_BUFGP       |   0.000|
+MT_WE       |   11.312(R)|clk50_BUFGP       |   0.000|
+color<0>    |   17.808(F)|clk50_BUFGP       |   0.000|
+color<1>    |   17.806(F)|clk50_BUFGP       |   0.000|
+color<2>    |   18.771(F)|clk50_BUFGP       |   0.000|
+color<3>    |   19.073(F)|clk50_BUFGP       |   0.000|
+color<4>    |   19.340(F)|clk50_BUFGP       |   0.000|
+color<5>    |   19.237(F)|clk50_BUFGP       |   0.000|
+color<6>    |   18.016(F)|clk50_BUFGP       |   0.000|
+color<7>    |   18.584(F)|clk50_BUFGP       |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clk50
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk50          |   10.655|   10.104|    6.036|         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+lowHigh        |ledOut<1>      |   12.077|
+lowHigh        |ledOut<2>      |   10.842|
+lowHigh        |ledOut<3>      |   11.774|
+lowHigh        |ledOut<4>      |   12.475|
+lowHigh        |ledOut<5>      |   12.356|
+lowHigh        |ledOut<6>      |   11.966|
+lowHigh        |ledOut<7>      |   12.347|
+---------------+---------------+---------+
+
+
+Analysis completed Thu May 05 21:52:15 2011 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 160 MB
+
+
+

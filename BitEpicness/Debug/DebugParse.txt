@@ -1,0 +1,41 @@
+Formal -> Type id
+Stmt -> Type id;
+PrimitiveExpr -> integer
+ParenExpr -> PrimitiveExpr
+UnaryExpr -> ParenExpr
+BinaryAndOrExprPrime -> e
+BinaryAndOrExpr -> UnaryExpr BinaryAndOrExprPrime
+MultDivExprPrime -> e
+MultDivExpr -> BinaryAndOrExpr MultDivExprPrime
+AddSubExprPrime -> e
+AddSubExpr -> MultDivExpr AddSubExprPrime
+CompareExprPrime -> e
+CompareExpr -> AddSubExpr CompareExprPrime
+EqualExprPrime -> e
+EqualExpr -> CompareExpr EqualExprPrime
+AndOrExprPrime -> e
+AndOrExpr -> EqualExpr AndOrExprPrime
+Expr -> AndOrExpr
+StmtPrime -> = Expr;
+Stmt -> id StmtPrime;
+AsmExpr -> asm(string, AsmParam, AsmParam);
+Stmt -> asm AssExpr;
+PrimitiveExpr -> integer
+ParenExpr -> PrimitiveExpr
+UnaryExpr -> ParenExpr
+BinaryAndOrExprPrime -> e
+BinaryAndOrExpr -> UnaryExpr BinaryAndOrExprPrime
+MultDivExprPrime -> e
+MultDivExpr -> BinaryAndOrExpr MultDivExprPrime
+AddSubExprPrime -> e
+AddSubExpr -> MultDivExpr AddSubExprPrime
+CompareExprPrime -> e
+CompareExpr -> AddSubExpr CompareExprPrime
+EqualExprPrime -> e
+EqualExpr -> CompareExpr EqualExprPrime
+AndOrExprPrime -> e
+AndOrExpr -> EqualExpr AndOrExprPrime
+Expr -> AndOrExpr
+Stmt -> return Expr;
+FuncDecl -> Type id ([Formal {',' Formal}]) {{Stmt} return Expr; }
+ParserGrammar ->{FuncDecl}

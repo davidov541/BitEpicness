@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/ScreenMem.v"
+verilog work "VGAcontroller.v"
+verilog work "VGA.v"
+verilog work "VGA_TB.v"
+verilog work "C:/Xilinx/12.2/ISE_DS/ISE//verilog/src/glbl.v"

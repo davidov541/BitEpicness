@@ -1,0 +1,138 @@
+Running: C:\Xilinx\12.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o D:/Code/Verilog/BitEpicness/Main_TB_isim_beh.exe -prj D:/Code/Verilog/BitEpicness/Main_TB_beh.prj work.Main_TB work.glbl 
+ISim M.63c (signature 0xb869381d)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/ipcore_dir/MainMem.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/sendSD.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/receiveSD.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/blockReceiveSD.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Shifter.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/OddParity.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Negator.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/ipcore_dir/FontMem.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/ExecuteCommand.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Encoder32bit.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Comparator16b.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/VGAcontroller.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/StallDetector.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/SignExtend7.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/SDCardReader.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/RegisterFile.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/ReadPS2.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Pulser.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/PCControl.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/LEDDriver.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/ipcore_dir/SDtempRAM.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/ipcore_dir/ScreenMem.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/ipcore_dir/ScancodeDecoder.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/ipcore_dir/InstructionMem.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/InteruptHandler.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/InstructionTranslate.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/GPU.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Debouncer.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Coprocessor.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Control.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/ALU.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/VGA.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Touchscreen.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/SwitchInput.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/SevenSegDisplay.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/SDCard.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/MillisecondTimer.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/MemoryManager.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Keyboard.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Decoder32bit.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/BitEpicness.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/sd_model.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Main.v\" into library work
+Analyzing Verilog file \"D:/Code/Verilog/BitEpicness/Main_TB.v\" into library work
+Analyzing Verilog file \"C:/Xilinx/12.2/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Parsing VHDL file "D:/Code/Verilog/BitEpicness/AD1RefComp.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "D:/Code/Verilog/BitEpicness/Main_TB.v" Line 58: Port lowHigh is not connected to this instance
+WARNING:HDLCompiler:189 - "D:/Code/Verilog/BitEpicness/MemoryManager.v" Line 70: Size mismatch in connection of port <dina>. Formal port size is 16-bit while actual signal size is 32-bit.
+Completed static elaboration
+Fuse Memory Usage: 113024 KB
+Fuse CPU Usage: 421 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Compiling module PCControl
+Compiling module InstructionTranslate
+Compiling module Control
+Compiling module StallDetector
+Compiling module RegisterFile
+Compiling module SignExtend7
+Compiling module Negator
+Compiling module Shifter
+Compiling module Comparator16b
+Compiling module ALU
+Compiling module Coprocessor
+Compiling module Encoder32bit
+Compiling module InteruptHandler
+Compiling module BitEpicness
+Compiling module BLK_MEM_GEN_V4_2_output_stage(C_...
+Compiling module BLK_MEM_GEN_V4_2_softecc_output_...
+Compiling module BLK_MEM_GEN_V4_2_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V4_2(C_FAMILY="spart...
+Compiling module InstructionMem
+Compiling module BLK_MEM_GEN_V4_2_output_stage(C_...
+Compiling module BLK_MEM_GEN_V4_2_softecc_output_...
+Compiling module BLK_MEM_GEN_V4_2_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V4_2(C_FAMILY="spart...
+Compiling module MainMem
+Compiling module MemoryManager
+Compiling module Decoder32bit
+Compiling module LEDDriver
+Compiling module SevenSegDisplay
+Compiling module MillisecondTimer
+Compiling module Debouncer
+Compiling module Pulser
+Compiling module SwitchInput
+Compiling module VGAcontroller
+Compiling module BLK_MEM_GEN_V4_2_output_stage(C_...
+Compiling module BLK_MEM_GEN_V4_2_softecc_output_...
+Compiling module BLK_MEM_GEN_V4_2_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V4_2(C_FAMILY="spart...
+Compiling module FontMem
+Compiling module GPU
+Compiling module BLK_MEM_GEN_V4_2_output_stage(C_...
+Compiling module BLK_MEM_GEN_V4_2_softecc_output_...
+Compiling module BLK_MEM_GEN_V4_2_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V4_2(C_FAMILY="spart...
+Compiling module ScreenMem
+Compiling module VGA
+Compiling module sendSD
+Compiling module receiveSD
+Compiling module blockReceiveSD
+Compiling module ExecuteCommand
+Compiling module SDCardReader
+Compiling module BLK_MEM_GEN_V4_2_output_stage(C_...
+Compiling module BLK_MEM_GEN_V4_2_softecc_output_...
+Compiling module BLK_MEM_GEN_V4_2_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V4_2(C_FAMILY="spart...
+Compiling module SDtempRAM
+Compiling module SDCard
+Compiling module BLK_MEM_GEN_V4_2_output_stage(C_...
+Compiling module BLK_MEM_GEN_V4_2_softecc_output_...
+Compiling module BLK_MEM_GEN_V4_2_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V4_2(C_FAMILY="spart...
+Compiling module ScancodeDecoder
+Compiling module OddParity
+Compiling module ReadPS2
+Compiling module Keyboard
+Compiling module Touchscreen
+Compiling module Main
+Compiling module sd_model
+Compiling module Main_TB
+Compiling module glbl
+Compiling architecture ad1 of entity ad1refcomp [ad1refcomp_default]
+Time Resolution for simulation is 1ps.
+Waiting for 23 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Compiled 69 Verilog Units
+Built simulation executable D:/Code/Verilog/BitEpicness/Main_TB_isim_beh.exe
+Fuse Memory Usage: 126768 KB
+Fuse CPU Usage: 2749 ms

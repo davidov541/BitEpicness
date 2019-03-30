@@ -1,0 +1,8 @@
+Release 12.2 Drc M.63c (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Sat Apr 30 00:50:59 2011
+
+drc -z Keyboard.ncd Keyboard.pcf
+
+DRC detected 0 errors and 0 warnings.

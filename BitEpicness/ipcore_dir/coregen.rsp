@@ -1,0 +1,2 @@
+SETPROJECT "D:/Code/Verilog/BitEpicness/ipcore_dir/coregen.cgp"
+LAUNCHXCO "D:/Code/Verilog/BitEpicness/ipcore_dir/InstructionMem.xco"

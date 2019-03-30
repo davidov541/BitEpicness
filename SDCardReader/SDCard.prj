@@ -1,0 +1,8 @@
+verilog work "ipcore_dir/SDtempRAM.v"
+verilog work "sendSD.v"
+verilog work "receiveSD.v"
+verilog work "blockReceiveSD.v"
+verilog work "ExecuteCommand.v"
+verilog work "SDCardReader.v"
+verilog work "LEDDriver.v"
+verilog work "SDCard.v"

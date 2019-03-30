@@ -1,0 +1,15 @@
+# Output products list for <SDtempRAM>
+SDtempRAM.asy
+SDtempRAM.gise
+SDtempRAM.ngc
+SDtempRAM.v
+SDtempRAM.veo
+SDtempRAM.vhd
+SDtempRAM.vho
+SDtempRAM.xco
+SDtempRAM.xise
+SDtempRAM_flist.txt
+SDtempRAM_xmdf.tcl
+_xmsgs\pn_parser.xmsgs
+blk_mem_gen_ds512.pdf
+blk_mem_gen_readme.txt

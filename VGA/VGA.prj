@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/ScreenMem.v"
+verilog work "VGAcontroller.v"
+verilog work "VGA.v"

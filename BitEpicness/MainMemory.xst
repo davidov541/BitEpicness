@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/mcginnda.ROSE-HULMAN/Desktop/BitEpicness/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/mcginnda.ROSE-HULMAN/Desktop/BitEpicness/xst"
+elaborate
+-ifn MainMemory.prj
+-ifmt mixed

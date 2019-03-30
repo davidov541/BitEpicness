@@ -1,0 +1,3 @@
+verilog isim_temp "Shifter.v"
+verilog isim_temp "Test_Shifter.v"
+verilog isim_temp "C:/Xilinx/11.1/ISE/verilog/src/glbl.v"

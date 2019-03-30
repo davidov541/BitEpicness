@@ -1,0 +1,11 @@
+[Inputs]
+writeReg
+clk
+reset
+=writeData[12:0]=
+[Outputs]
+=outData[12:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Reg13
+

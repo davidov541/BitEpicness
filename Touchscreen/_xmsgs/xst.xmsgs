@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">temp2&lt;15&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">temp1&lt;15&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">saveY</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">saveX</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">u0</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp1_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1refcomp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp1_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1refcomp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp1_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1refcomp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp1_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1refcomp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp2_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1refcomp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp2_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1refcomp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp2_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1refcomp</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">temp2_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">ad1refcomp</arg>&gt;.
+</msg>
+
+</messages>
+

@@ -1,0 +1,4 @@
+MO ReadPS2 NULL ReadPS2.v vlg11/_read_p_s2.bin 1304138991
+MO Keyboard NULL Keyboard.v vlg55/_keyboard.bin 1304138992
+MO OddParity NULL OddParity.v vlg10/_odd_parity.bin 1304138991
+MO LEDDriver NULL LEDDriver.v vlg6D/_l_e_d_driver.bin 1304138992

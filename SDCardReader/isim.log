@@ -1,0 +1,25 @@
+ISim log file
+Running: G:\SDCardReader\SDcard_TB_isim_beh.exe -gui -tclbatch isim.cmd -wdb G:/SDCardReader/SDcard_TB_isim_beh.wdb 
+ISim M.63c (signature 0xb869381d)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Block Memory Generator CORE Generator module SDcard_TB.uut.u2.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Block Memory Generator CORE Generator module SDcard_TB.uut.u2.inst.blk_mem_gen_v4_2_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Finished circuit initialization process.
+blk_mem_gen_v4_2 collision detected at time: 24925000, A write address: 0, B  read address: 0
+blk_mem_gen_v4_2 collision detected at time: 24935000, A write address: 0, B  read address: 0
+blk_mem_gen_v4_2 collision detected at time: 24945000, A write address: 0, B  read address: 0
+blk_mem_gen_v4_2 collision detected at time: 24955000, A write address: 0, B  read address: 0
+blk_mem_gen_v4_2 collision detected at time: 24965000, A write address: 0, B  read address: 0
+Stopped at time : 1026 us : File "G:/SDCardReader/SDcard_TB.v" Line 75

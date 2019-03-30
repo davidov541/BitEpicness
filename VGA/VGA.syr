@@ -1,0 +1,448 @@
+Release 12.2 - xst M.63c (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.27 secs
+ 
+--> Reading design: VGA.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "VGA.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "VGA"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : VGA
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ipcore_dir/ScreenMem.v" in library work
+Compiling verilog file "VGAcontroller.v" in library work
+Module <ScreenMem> compiled
+Compiling verilog file "VGA.v" in library work
+Module <VGAcontroller> compiled
+Module <VGA> compiled
+No errors in compilation
+Analysis of file <"VGA.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <VGA> in library <work>.
+
+Analyzing hierarchy for module <VGAcontroller> in library <work> with parameters.
+	HmaxCount = "1100011111"
+	VmaxCount = "1000001000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <VGA>.
+WARNING:Xst:2211 - "ipcore_dir/ScreenMem.v" line 31: Instantiating black box module <ScreenMem>.
+Module <VGA> is correct for synthesis.
+ 
+Analyzing module <VGAcontroller> in library <work>.
+	HmaxCount = 10'b1100011111
+	VmaxCount = 10'b1000001000
+Module <VGAcontroller> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <VGAcontroller>.
+    Related source file is "VGAcontroller.v".
+    Found 1-bit register for signal <vSync>.
+    Found 1-bit register for signal <hSync>.
+    Found 10-bit comparator less for signal <draw$cmp_lt0000> created at line 31.
+    Found 10-bit comparator less for signal <draw$cmp_lt0001> created at line 31.
+    Found 10-bit up counter for signal <hCount>.
+    Found 10-bit up counter for signal <vCount>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <VGAcontroller> synthesized.
+
+
+Synthesizing Unit <VGA>.
+    Related source file is "VGA.v".
+    Found 1-bit register for signal <clk25>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <VGA> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 3
+ 1-bit register                                        : 3
+# Comparators                                          : 2
+ 10-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/ScreenMem.ngc>.
+Loading core <ScreenMem> for timing and area information for instance <u1>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+# Comparators                                          : 2
+ 10-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <VGA> ...
+
+Optimizing unit <VGAcontroller> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block VGA, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 23
+ Flip-Flops                                            : 23
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : VGA.ngr
+Top Level Output File Name         : VGA
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 7
+
+Cell Usage :
+# BELS                             : 150
+#      GND                         : 2
+#      INV                         : 4
+#      LUT1                        : 18
+#      LUT2                        : 32
+#      LUT3                        : 19
+#      LUT3_D                      : 1
+#      LUT4                        : 26
+#      LUT4_D                      : 1
+#      LUT4_L                      : 4
+#      MUXCY                       : 18
+#      MUXF5                       : 3
+#      VCC                         : 2
+#      XORCY                       : 20
+# FlipFlops/Latches                : 26
+#      FDC                         : 11
+#      FDCE                        : 10
+#      FDE                         : 3
+#      FDP                         : 2
+# RAMS                             : 15
+#      RAMB16_S1_S1                : 15
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 6
+#      IBUF                        : 1
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       56  out of   4656     1%  
+ Number of Slice Flip Flops:             26  out of   9312     0%  
+ Number of 4 input LUTs:                105  out of   9312     1%  
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of    232     3%  
+ Number of BRAMs:                        15  out of     20    75%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk50                              | BUFGP                  | 34    |
+clk251                             | BUFG                   | 22    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 23    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.373ns (Maximum Frequency: 156.912MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 10.474ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50'
+  Clock period: 2.470ns (frequency: 404.858MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.470ns (Levels of Logic = 1)
+  Source:            clk25 (FF)
+  Destination:       clk25 (FF)
+  Source Clock:      clk50 rising
+  Destination Clock: clk50 rising
+
+  Data Path: clk25 to clk25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.447  clk25 (clk251)
+     INV:I->O              1   0.704   0.420  clk25_not00011_INV_0 (clk25_not0001)
+     FDC:D                     0.308          clk25
+    ----------------------------------------
+    Total                      2.470ns (1.603ns logic, 0.867ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk251'
+  Clock period: 6.373ns (frequency: 156.912MHz)
+  Total number of paths / destination ports: 561 / 32
+-------------------------------------------------------------------------
+Delay:               6.373ns (Levels of Logic = 4)
+  Source:            u0/hCount_3 (FF)
+  Destination:       u0/vSync (FF)
+  Source Clock:      clk251 rising
+  Destination Clock: clk251 rising
+
+  Data Path: u0/hCount_3 to u0/vSync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.591   0.762  u0/hCount_3 (u0/hCount_3)
+     LUT4:I0->O            3   0.704   0.535  u0/hHitMax1_SW1 (N8)
+     LUT4:I3->O           11   0.704   0.937  u0/hHitMax_1 (u0/hHitMax1)
+     LUT4:I3->O            1   0.704   0.424  u0/vSync_mux000047 (u0/vSync_mux000047)
+     LUT4:I3->O            1   0.704   0.000  u0/vSync_mux0000103 (u0/vSync_mux0000)
+     FDP:D                     0.308          u0/vSync
+    ----------------------------------------
+    Total                      6.373ns (3.715ns logic, 2.658ns route)
+                                       (58.3% logic, 41.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk50'
+  Total number of paths / destination ports: 36 / 3
+-------------------------------------------------------------------------
+Offset:              10.474ns (Levels of Logic = 6)
+  Source:            u1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp1x1.ram (RAM)
+  Destination:       blue (PAD)
+  Source Clock:      clk50 falling
+
+  Data Path: u1/BU2/U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp1x1.ram to blue
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16_S1_S1:CLKB->DOB0    1   2.800   0.499  U0/blk_mem_generator/valid.cstr/ramloop[0].ram.r/s3_init.ram/dpram.dp1x1.ram (U0/blk_mem_generator/valid.cstr/ram_doutb)
+     LUT3:I1->O            1   0.704   0.000  U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_7 (U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_7)
+     MUXF5:I0->O           1   0.321   0.455  U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_5_f5 (U0/blk_mem_generator/valid.cstr/has_mux_b.B/Mmux_dout_mux_5_f5)
+     LUT4:I2->O            1   0.704   0.595  U0/blk_mem_generator/valid.cstr/has_mux_b.B/sel_pipe<2>1 (doutb(0))
+     end scope: 'BU2'
+     end scope: 'u1'
+     LUT2:I0->O            1   0.704   0.420  blue1 (blue_OBUF)
+     OBUF:I->O                 3.272          blue_OBUF (blue)
+    ----------------------------------------
+    Total                     10.474ns (8.505ns logic, 1.969ns route)
+                                       (81.2% logic, 18.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk251'
+  Total number of paths / destination ports: 20 / 5
+-------------------------------------------------------------------------
+Offset:              8.844ns (Levels of Logic = 4)
+  Source:            u0/vCount_8 (FF)
+  Destination:       blue (PAD)
+  Source Clock:      clk251 rising
+
+  Data Path: u0/vCount_8 to blue
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.591   0.844  u0/vCount_8 (u0/vCount_8)
+     LUT3:I0->O            1   0.704   0.424  u0/draw_SW0 (N01)
+     LUT4:I3->O           20   0.704   1.181  u0/draw (draw)
+     LUT2:I1->O            1   0.704   0.420  red1 (red_OBUF)
+     OBUF:I->O                 3.272          red_OBUF (red)
+    ----------------------------------------
+    Total                      8.844ns (5.975ns logic, 2.869ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.54 secs
+ 
+--> 
+
+Total memory usage is 197612 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

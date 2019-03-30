@@ -1,0 +1,7 @@
+MO PWM NULL PWM.v vlg50/_p_w_m.bin 1296595118
+AR da2refcomp da2 D:/Code/Verilog/MicTest/DA2RefComp.vhd sub00/vhpl03 1296593667
+AR pmodmicrefcomp pmodmic D:/Code/Verilog/MicTest/PmodMicRefComp.vhd sub00/vhpl01 1296595119
+MO MicTest2 NULL MicTest2.v vlg4F/_mic_test2.bin 1296593666
+MO MicTest NULL MicTest.v vlg39/_mic_test.bin 1296595118
+EN da2refcomp NULL D:/Code/Verilog/MicTest/DA2RefComp.vhd sub00/vhpl02 1296593666
+EN pmodmicrefcomp NULL D:/Code/Verilog/MicTest/PmodMicRefComp.vhd sub00/vhpl00 1296595118

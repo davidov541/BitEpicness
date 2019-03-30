@@ -1,0 +1,72 @@
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.syr" 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.syr" 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.syr" 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.syr" 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Keyboard.ngc" Keyboard.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Keyboard_map.ncd Keyboard.ngd Keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 Keyboard_map.ncd Keyboard.ncd Keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Keyboard.twx Keyboard.ncd -o Keyboard.twr Keyboard.pcf 
+bitgen -intstyle ise -f Keyboard.ut Keyboard.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 "Keyboard.ngc" Keyboard.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Keyboard_map.ncd Keyboard.ngd Keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 Keyboard_map.ncd Keyboard.ncd Keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Keyboard.twx Keyboard.ncd -o Keyboard.twr Keyboard.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Keyboard.ut Keyboard.ncd 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 "Keyboard.ngc" Keyboard.ngd  
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 "Keyboard.ngc" Keyboard.ngd  
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.syr" 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 "Keyboard.ngc" Keyboard.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Keyboard_map.ncd Keyboard.ngd Keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 Keyboard_map.ncd Keyboard.ncd Keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Keyboard.twx Keyboard.ncd -o Keyboard.twr Keyboard.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Keyboard.ut Keyboard.ncd 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 "Keyboard.ngc" Keyboard.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Keyboard_map.ncd Keyboard.ngd Keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 Keyboard_map.ncd Keyboard.ncd Keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Keyboard.twx Keyboard.ncd -o Keyboard.twr Keyboard.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Keyboard.ut Keyboard.ncd 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 "Keyboard.ngc" Keyboard.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Keyboard_map.ncd Keyboard.ngd Keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 Keyboard_map.ncd Keyboard.ncd Keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Keyboard.twx Keyboard.ncd -o Keyboard.twr Keyboard.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Keyboard.ut Keyboard.ncd 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Flash Drive contents/Keyboard/Keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 "Keyboard.ngc" Keyboard.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Keyboard_map.ncd Keyboard.ngd Keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 Keyboard_map.ncd Keyboard.ncd Keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Keyboard.twx Keyboard.ncd -o Keyboard.twr Keyboard.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Keyboard.ut Keyboard.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/Keyboard/Keyboard.xst" -ofn "D:/Code/Verilog/Keyboard/Keyboard.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/Keyboard/Keyboard.xst" -ofn "D:/Code/Verilog/Keyboard/Keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 Keyboard.ngc Keyboard.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Keyboard_map.ncd Keyboard.ngd Keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 Keyboard_map.ncd Keyboard.ncd Keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Keyboard.twx Keyboard.ncd -o Keyboard.twr Keyboard.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Keyboard.ut Keyboard.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/Keyboard/Keyboard.xst" -ofn "D:/Code/Verilog/Keyboard/Keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 Keyboard.ngc Keyboard.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Keyboard_map.ncd Keyboard.ngd Keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 Keyboard_map.ncd Keyboard.ncd Keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Keyboard.twx Keyboard.ncd -o Keyboard.twr Keyboard.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Keyboard.ut Keyboard.ncd 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Keyboard/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Keyboard/Keyboard/Keyboard.syr" 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Keyboard/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Keyboard/Keyboard/Keyboard.syr" 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Keyboard/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Keyboard/Keyboard/Keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 Keyboard.ngc Keyboard.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Keyboard_map.ncd Keyboard.ngd Keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 Keyboard_map.ncd Keyboard.ncd Keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Keyboard.twx Keyboard.ncd -o Keyboard.twr Keyboard.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Keyboard.ut Keyboard.ncd 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Keyboard/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Keyboard/Keyboard/Keyboard.syr" 
+xst -intstyle ise -ifn "C:/Users/greenkt/Desktop/Keyboard/Keyboard/Keyboard.xst" -ofn "C:/Users/greenkt/Desktop/Keyboard/Keyboard/Keyboard.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 Keyboard.ngc Keyboard.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Keyboard_map.ncd Keyboard.ngd Keyboard.pcf 
+par -w -intstyle ise -ol high -t 1 Keyboard_map.ncd Keyboard.ncd Keyboard.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Keyboard.twx Keyboard.ncd -o Keyboard.twr Keyboard.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f Keyboard.ut Keyboard.ncd 

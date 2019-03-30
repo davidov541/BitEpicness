@@ -1,0 +1,40 @@
+Release 12.2 ngdbuild M.63c (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\12.2\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4
+SDCard.ngc SDCard.ngd
+
+Reading NGO file "G:/SDCardReader/SDCard.ngc" ...
+Loading design module "ipcore_dir/SDtempRAM.ngc"...
+Applying constraints in "ipcore_dir/SDtempRAM.ncf" to module
+"ipcore_dir/SDtempRAM.ngc"...
+Checking Constraint Associations...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "ucf.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 103904 kilobytes
+
+Writing NGD file "SDCard.ngd" ...
+Total REAL time to NGDBUILD completion:  11 sec
+Total CPU time to NGDBUILD completion:   8 sec
+
+Writing NGDBUILD log file "SDCard.bld"...

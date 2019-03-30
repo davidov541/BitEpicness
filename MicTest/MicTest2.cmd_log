@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest2.xst" -ofn "D:/Code/Verilog/MicTest/MicTest2.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest2.xst" -ofn "D:/Code/Verilog/MicTest/MicTest2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 MicTest2.ngc MicTest2.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicTest2_map.ncd MicTest2.ngd MicTest2.pcf 
+par -w -intstyle ise -ol high -t 1 MicTest2_map.ncd MicTest2.ncd MicTest2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicTest2.twx MicTest2.ncd -o MicTest2.twr MicTest2.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MicTest2.ut MicTest2.ncd 

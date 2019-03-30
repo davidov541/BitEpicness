@@ -1,0 +1,128 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 11.1
+//  \   \         Application : sch2hdl
+//  /   /         Filename : BitEpicnessSch.vf
+// /___/   /\     Timestamp : 11/27/2010 17:15:37
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/mcginnda.ROSE-HULMAN/Desktop/BitEpicness/BitEpicnessSch.vf -w C:/Users/mcginnda.ROSE-HULMAN/Desktop/BitEpicness/BitEpicnessSch.sch
+//Design Name: BitEpicnessSch
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module BitEpicnessSch(clk, 
+                      reset, 
+                      EX, 
+                      EX_Mask, 
+                      Imm, 
+                      JTarget, 
+                      MEM, 
+                      MEM_Mask, 
+                      OutReg1, 
+                      OutReg2, 
+                      OutReg3, 
+                      REG, 
+                      REG_Instruction, 
+                      REG_Mask, 
+                      WB);
+
+    input clk;
+    input reset;
+   output [11:0] EX;
+   output EX_Mask;
+   output [6:0] Imm;
+   output [10:0] JTarget;
+   output [6:0] MEM;
+   output MEM_Mask;
+   output [15:0] OutReg1;
+   output [15:0] OutReg2;
+   output [15:0] OutReg3;
+   output REG;
+   output [15:0] REG_Instruction;
+   output REG_Mask;
+   output [4:0] WB;
+   
+   wire ONE;
+   wire [3:0] ReadReg1;
+   wire [3:0] ReadReg2;
+   wire [3:0] ReadReg3;
+   wire [4:0] XLXN_7;
+   wire [2:0] XLXN_8;
+   wire [15:0] XLXN_52;
+   wire [8:0] XLXN_75;
+   wire [8:0] XLXN_77;
+   wire ZERO;
+   wire REG_DUMMY;
+   wire [10:0] JTarget_DUMMY;
+   wire [15:0] REG_Instruction_DUMMY;
+   
+   assign JTarget[10:0] = JTarget_DUMMY[10:0];
+   assign REG = REG_DUMMY;
+   assign REG_Instruction[15:0] = REG_Instruction_DUMMY[15:0];
+   PCControl XLXI_2 (.ALUOutput(), 
+                     .ALUOverflow(ZERO), 
+                     .Branch(ZERO), 
+                     .BranchTarget(), 
+                     .BranchType(), 
+                     .Jump(REG_DUMMY), 
+                     .JumpRegister(ZERO), 
+                     .JumpRegisterTarget(), 
+                     .JumpTarget(JTarget_DUMMY[8:0]), 
+                     .Old_PC(XLXN_77[8:0]), 
+                     .EX_Mask(EX_Mask), 
+                     .MEM_Mask(MEM_Mask), 
+                     .pc(XLXN_75[8:0]), 
+                     .REG_Mask(REG_Mask));
+   Control XLXI_3 (.clk(clk), 
+                   .FuncCode(XLXN_8[2:0]), 
+                   .OpCode(XLXN_7[4:0]), 
+                   .Reset(reset), 
+                   .EX(EX[11:0]), 
+                   .MEM(MEM[6:0]), 
+                   .REG(REG_DUMMY), 
+                   .WB(WB[4:0]));
+   InstructionTranslate XLXI_4 (.Instruction(REG_Instruction_DUMMY[15:0]), 
+                                .FuncCode(XLXN_8[2:0]), 
+                                .Imm(Imm[6:0]), 
+                                .JTarget(JTarget_DUMMY[10:0]), 
+                                .OpCode(XLXN_7[4:0]), 
+                                .ReadReg1(ReadReg1[3:0]), 
+                                .ReadReg2(ReadReg2[3:0]), 
+                                .ReadReg3(ReadReg3[3:0]));
+   VCC XLXI_5 (.P(ONE));
+   GND XLXI_6 (.G(ZERO));
+   RegisterFile XLXI_7 (.clk(clk), 
+                        .Data(), 
+                        .Read1(ReadReg1[3:0]), 
+                        .Read2(ReadReg2[3:0]), 
+                        .Read3(ReadReg3[3:0]), 
+                        .Reset(reset), 
+                        .WriteEnable(ZERO), 
+                        .WriteReg(), 
+                        .Out1(OutReg1[15:0]), 
+                        .Out2(OutReg2[15:0]), 
+                        .Out3(OutReg3[15:0]));
+   Reg16 XLXI_11 (.clk(clk), 
+                  .reset(reset), 
+                  .writeData(XLXN_52[15:0]), 
+                  .writeReg(ONE), 
+                  .outData(REG_Instruction_DUMMY[15:0]));
+   Reg9 XLXI_14 (.clk(clk), 
+                 .reset(reset), 
+                 .writeData(XLXN_75[8:0]), 
+                 .writeReg(ONE), 
+                 .outData(XLXN_77[8:0]));
+   InstructionMemory XLXI_15 (.Address(XLXN_75[8:0]), 
+                              .clk(clk), 
+                              .Instruction(XLXN_52[15:0]));
+endmodule

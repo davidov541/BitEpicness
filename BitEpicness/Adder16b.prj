@@ -1,0 +1,4 @@
+verilog work "Adder1b.v"
+verilog work "Shifter.v"
+verilog work "Adder16b.v"
+verilog work "ALU.v"

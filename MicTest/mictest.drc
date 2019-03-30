@@ -1,0 +1,8 @@
+Release 12.2 Drc M.63c (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Tue Feb 01 16:19:42 2011
+
+drc -z MicTest.ncd MicTest.pcf
+
+DRC detected 0 errors and 0 warnings.

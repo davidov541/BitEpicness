@@ -1,0 +1,36 @@
+Release 11.1 - xst L.33 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/mcginnda.ROSE-HULMAN/Desktop/BitEpicness/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.64 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/mcginnda.ROSE-HULMAN/Desktop/BitEpicness/xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.65 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "PCControl.v" in library work
+Module <PCControl> compiled
+No errors in compilation
+Analysis of file <"PCControl.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.78 secs
+ 
+--> 
+
+Total memory usage is 156848 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

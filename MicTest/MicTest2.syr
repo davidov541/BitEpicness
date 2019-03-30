@@ -1,0 +1,643 @@
+Release 12.2 - xst M.63c (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Reading design: MicTest2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MicTest2.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MicTest2"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : MicTest2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Code/Verilog/MicTest/DA2RefComp.vhd" in Library work.
+Architecture da2 of Entity da2refcomp is up to date.
+Compiling vhdl file "D:/Code/Verilog/MicTest/PmodMicRefComp.vhd" in Library work.
+Architecture pmodmic of Entity pmodmicrefcomp is up to date.
+Compiling verilog file "MicTest2.v" in library work
+Module <MicTest2> compiled
+No errors in compilation
+Analysis of file <"MicTest2.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <MicTest2> in library <work> with parameters.
+	sampleRate = "00000000000000000000010011100001"
+
+Analyzing hierarchy for entity <pmodmicrefcomp> in library <work> (architecture <pmodmic>).
+
+Analyzing hierarchy for entity <da2refcomp> in library <work> (architecture <da2>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <MicTest2>.
+	sampleRate = 32'sb00000000000000000000010011100001
+Module <MicTest2> is correct for synthesis.
+ 
+Analyzing Entity <pmodmicrefcomp> in library <work> (Architecture <pmodmic>).
+Entity <pmodmicrefcomp> analyzed. Unit <pmodmicrefcomp> generated.
+
+Analyzing Entity <da2refcomp> in library <work> (Architecture <da2>).
+Entity <da2refcomp> analyzed. Unit <da2refcomp> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <pmodmicrefcomp>.
+    Related source file is "D:/Code/Verilog/MicTest/PmodMicRefComp.vhd".
+WARNING:Xst:646 - Signal <temp<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk_div                   (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 12-bit register for signal <DATA>.
+    Found 2-bit up counter for signal <clk_counter>.
+    Found 4-bit up counter for signal <shiftCounter>.
+    Found 16-bit register for signal <temp>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  28 D-type flip-flop(s).
+Unit <pmodmicrefcomp> synthesized.
+
+
+Synthesizing Unit <da2refcomp>.
+    Related source file is "D:/Code/Verilog/MicTest/DA2RefComp.vhd".
+    Found finite state machine <FSM_1> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk_div                   (rising_edge)        |
+    | Reset              | RST                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 28-bit up counter for signal <clk_counter>.
+    Found 4-bit up counter for signal <shiftCounter>.
+    Found 16-bit register for signal <temp1>.
+    Found 16-bit register for signal <temp2>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  32 D-type flip-flop(s).
+Unit <da2refcomp> synthesized.
+
+
+Synthesizing Unit <MicTest2>.
+    Related source file is "MicTest2.v".
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state> of Case statement line 52 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found finite state machine <FSM_2> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clock                     (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit register for signal <delay>.
+    Found 16-bit subtractor for signal <delay$addsub0000> created at line 47.
+    Found 12-bit register for signal <soundOut>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <MicTest2> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 16-bit subtractor                                     : 1
+# Counters                                             : 4
+ 2-bit up counter                                      : 1
+ 28-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 6
+ 12-bit register                                       : 2
+ 16-bit register                                       : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <state/FSM> on signal <state[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0001
+ 01    | 0010
+ 10    | 0100
+ 11    | 1000
+-------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <u1/current_state/FSM> on signal <current_state[1:3]> with one-hot encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 001
+ shiftout | 010
+ syncdata | 100
+----------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <u0/current_state/FSM> on signal <current_state[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 00
+ shiftin  | 01
+ syncdata | 10
+----------------------
+WARNING:Xst:2677 - Node <temp_12> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <temp_13> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <temp_14> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <temp_15> of sequential type is unconnected in block <u0>.
+WARNING:Xst:2677 - Node <temp_12> of sequential type is unconnected in block <pmodmicrefcomp>.
+WARNING:Xst:2677 - Node <temp_13> of sequential type is unconnected in block <pmodmicrefcomp>.
+WARNING:Xst:2677 - Node <temp_14> of sequential type is unconnected in block <pmodmicrefcomp>.
+WARNING:Xst:2677 - Node <temp_15> of sequential type is unconnected in block <pmodmicrefcomp>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# Counters                                             : 4
+ 2-bit up counter                                      : 1
+ 28-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 68
+ Flip-Flops                                            : 68
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <clk_counter_1> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_2> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_3> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_4> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_5> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_6> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_7> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_8> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_9> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_10> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_11> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_12> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_13> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_14> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_15> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_16> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_17> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_18> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_19> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_20> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_21> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_22> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_23> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_24> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_25> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_26> of sequential type is unconnected in block <da2refcomp>.
+WARNING:Xst:2677 - Node <clk_counter_27> of sequential type is unconnected in block <da2refcomp>.
+
+Optimizing unit <MicTest2> ...
+
+Optimizing unit <pmodmicrefcomp> ...
+
+Optimizing unit <da2refcomp> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MicTest2, actual ratio is 1.
+FlipFlop u0/current_state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop u1/current_state_FSM_FFd3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 89
+ Flip-Flops                                            : 89
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MicTest2.ngr
+Top Level Output File Name         : MicTest2
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 59
+#      GND                         : 1
+#      INV                         : 7
+#      LUT2                        : 14
+#      LUT3                        : 27
+#      LUT4                        : 6
+#      LUT4_L                      : 3
+#      XORCY                       : 1
+# FlipFlops/Latches                : 89
+#      FDC                         : 6
+#      FDCE                        : 12
+#      FDE                         : 56
+#      FDP                         : 1
+#      FDR                         : 4
+#      FDRE                        : 8
+#      FDS                         : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      IBUF                        : 2
+#      OBUF                        : 6
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       53  out of   4656     1%  
+ Number of Slice Flip Flops:             89  out of   9312     0%  
+ Number of 4 input LUTs:                 57  out of   9312     0%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    232     3%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 19    |
+u0/clk_counter_11                  | BUFG                   | 31    |
+u1/clk_counter_01                  | BUFG                   | 39    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 19    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.370ns (Maximum Frequency: 228.833MHz)
+   Minimum input arrival time before clock: 3.389ns
+   Maximum output required time after clock: 5.744ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 2.661ns (frequency: 375.799MHz)
+  Total number of paths / destination ports: 21 / 19
+-------------------------------------------------------------------------
+Delay:               2.661ns (Levels of Logic = 2)
+  Source:            u1/clk_counter_0 (FF)
+  Destination:       u1/clk_counter_0 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: u1/clk_counter_0 to u1/clk_counter_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.531  u1/clk_counter_0 (u1/clk_counter_01)
+     INV:I->O              0   0.704   0.000  u1/Mcount_clk_counter_lut<0>_INV_0 (u1/Mcount_clk_counter_lut<0>)
+     XORCY:LI->O           1   0.527   0.000  u1/Mcount_clk_counter_xor<0> (u1/Result<0>)
+     FDC:D                     0.308          u1/clk_counter_0
+    ----------------------------------------
+    Total                      2.661ns (2.130ns logic, 0.531ns route)
+                                       (80.0% logic, 20.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u0/clk_counter_11'
+  Clock period: 4.370ns (frequency: 228.833MHz)
+  Total number of paths / destination ports: 99 / 62
+-------------------------------------------------------------------------
+Delay:               4.370ns (Levels of Logic = 1)
+  Source:            u0/current_state_FSM_FFd2_1 (FF)
+  Destination:       u0/shiftCounter_3 (FF)
+  Source Clock:      u0/clk_counter_11 rising
+  Destination Clock: u0/clk_counter_11 rising
+
+  Data Path: u0/current_state_FSM_FFd2_1 to u0/shiftCounter_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             17   0.591   1.130  u0/current_state_FSM_FFd2_1 (u0/current_state_FSM_FFd2_1)
+     LUT2:I1->O           16   0.704   1.034  u0/DATA_not00011 (u0/DATA_not0001)
+     FDRE:R                    0.911          u0/shiftCounter_0
+    ----------------------------------------
+    Total                      4.370ns (2.206ns logic, 2.164ns route)
+                                       (50.5% logic, 49.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u1/clk_counter_01'
+  Clock period: 3.948ns (frequency: 253.279MHz)
+  Total number of paths / destination ports: 154 / 79
+-------------------------------------------------------------------------
+Delay:               3.948ns (Levels of Logic = 1)
+  Source:            u1/current_state_FSM_FFd2 (FF)
+  Destination:       u1/temp1_15 (FF)
+  Source Clock:      u1/clk_counter_01 rising
+  Destination Clock: u1/clk_counter_01 rising
+
+  Data Path: u1/current_state_FSM_FFd2 to u1/temp1_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.591   0.836  u1/current_state_FSM_FFd2 (u1/current_state_FSM_FFd2)
+     LUT2:I1->O           32   0.704   1.262  u1/temp1_not00011 (u1/temp1_not0001)
+     FDE:CE                    0.555          u1/temp2_0
+    ----------------------------------------
+    Total                      3.948ns (1.850ns logic, 2.098ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u0/clk_counter_11'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.389ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       u0/current_state_FSM_FFd2 (FF)
+  Destination Clock: u0/clk_counter_11 rising
+
+  Data Path: reset to u0/current_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            25   1.218   1.260  reset_IBUF (reset_IBUF)
+     FDR:R                     0.911          u0/current_state_FSM_FFd1
+    ----------------------------------------
+    Total                      3.389ns (2.129ns logic, 1.260ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u1/clk_counter_01'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.389ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       u1/current_state_FSM_FFd3 (FF)
+  Destination Clock: u1/clk_counter_01 rising
+
+  Data Path: reset to u1/current_state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            25   1.218   1.260  reset_IBUF (reset_IBUF)
+     FDR:R                     0.911          u1/current_state_FSM_FFd2
+    ----------------------------------------
+    Total                      3.389ns (2.129ns logic, 1.260ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.518ns (Levels of Logic = 2)
+  Source:            u0/clk_counter_1 (FF)
+  Destination:       micClock (PAD)
+  Source Clock:      clock rising
+
+  Data Path: u0/clk_counter_1 to micClock
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.531  u0/clk_counter_1 (u0/clk_counter_11)
+     INV:I->O              1   0.704   0.420  u0/SCLK1_INV_0 (micClock_OBUF)
+     OBUF:I->O                 3.272          micClock_OBUF (micClock)
+    ----------------------------------------
+    Total                      5.518ns (4.567ns logic, 0.951ns route)
+                                       (82.8% logic, 17.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u0/clk_counter_11'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.620ns (Levels of Logic = 2)
+  Source:            u0/current_state_FSM_FFd2 (FF)
+  Destination:       micCS (PAD)
+  Source Clock:      u0/clk_counter_11 rising
+
+  Data Path: u0/current_state_FSM_FFd2 to micCS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.633  u0/current_state_FSM_FFd2 (u0/current_state_FSM_FFd2)
+     INV:I->O              1   0.704   0.420  u0/current_state_FSM_Out31_INV_0 (micCS_OBUF)
+     OBUF:I->O                 3.272          micCS_OBUF (micCS)
+    ----------------------------------------
+    Total                      5.620ns (4.567ns logic, 1.053ns route)
+                                       (81.3% logic, 18.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u1/clk_counter_01'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              5.744ns (Levels of Logic = 2)
+  Source:            u1/current_state_FSM_FFd2 (FF)
+  Destination:       headSync (PAD)
+  Source Clock:      u1/clk_counter_01 rising
+
+  Data Path: u1/current_state_FSM_FFd2 to headSync
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.591   0.757  u1/current_state_FSM_FFd2 (u1/current_state_FSM_FFd2)
+     INV:I->O              1   0.704   0.420  u1/current_state_FSM_Out21_INV_0 (headSync_OBUF)
+     OBUF:I->O                 3.272          headSync_OBUF (headSync)
+    ----------------------------------------
+    Total                      5.744ns (4.567ns logic, 1.177ns route)
+                                       (79.5% logic, 20.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.03 secs
+ 
+--> 
+
+Total memory usage is 203080 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   36 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

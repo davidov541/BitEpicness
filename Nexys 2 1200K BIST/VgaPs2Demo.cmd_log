@@ -1,0 +1,4 @@
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/Documents and Settings/dmoses/Desktop/Nexys2Bist/UncompiledNexys2Bist/VgaPs2Demo.sch" VgaPs2Demo.vhf
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/Documents and Settings/dmoses/Desktop/Nexys2Bist/UncompiledNexys2Bist/VgaPs2Demo.sch" VgaPs2Demo.vhf
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/Documents and Settings/dmoses/Desktop/Nexys2(1200)Bist/UncompiledNexys2Bist/VgaPs2Demo.sch" VgaPs2Demo.vhf
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/Documents and Settings/dmoses/Desktop/Nexys2(1200)Bist/UncompiledNexys2Bist/VgaPs2Demo.sch" VgaPs2Demo.vhf

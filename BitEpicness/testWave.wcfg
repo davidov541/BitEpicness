@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Code/Verilog/BitEpicness/Main_TB_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Main_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/Main_TB/ledSync" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ledSync[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ledSync[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/ledOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ledOut[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ledOut[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/PC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC[8:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/regmask" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">regmask</obj_property>
+      <obj_property name="ObjectShortName">regmask</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/exmask" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">exmask</obj_property>
+      <obj_property name="ObjectShortName">exmask</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/memmask" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">memmask</obj_property>
+      <obj_property name="ObjectShortName">memmask</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/wbmask" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wbmask</obj_property>
+      <obj_property name="ObjectShortName">wbmask</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/regwritedata" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regwritedata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">regwritedata[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/WB_RegTarget" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">WB_RegTarget[3:0]</obj_property>
+      <obj_property name="ObjectShortName">WB_RegTarget[3:0]</obj_property>
+      <obj_property name="label">WB_RegTarget[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/WB_WB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WB_WB[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WB_WB[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/s0/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/s0/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/s0/opcode" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">opcode[4:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/s0/regA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regA[3:0]</obj_property>
+      <obj_property name="ObjectShortName">regA[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/s0/regB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">regB[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/s0/regC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">regC[3:0]</obj_property>
+      <obj_property name="ObjectShortName">regC[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/s0/stall" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">stall</obj_property>
+      <obj_property name="ObjectShortName">stall</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/s0/isLW" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">isLW</obj_property>
+      <obj_property name="ObjectShortName">isLW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/s0/usesPreviousReg" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">usesPreviousReg</obj_property>
+      <obj_property name="ObjectShortName">usesPreviousReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/s0/previousLW" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">previousLW</obj_property>
+      <obj_property name="ObjectShortName">previousLW</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Main_TB/uut/u0/s0/previousReg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">previousReg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">previousReg[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

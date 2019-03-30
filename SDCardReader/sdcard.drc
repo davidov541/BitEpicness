@@ -1,0 +1,8 @@
+Release 12.2 Drc M.63c (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Sun Feb 27 00:46:17 2011
+
+drc -z SDCard.ncd SDCard.pcf
+
+DRC detected 0 errors and 0 warnings.

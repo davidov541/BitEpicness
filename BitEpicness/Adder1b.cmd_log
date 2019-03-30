@@ -1,0 +1,1 @@
+xst -ise "D:/Code/Verilog/BitEpicness/BitEpicness.ise" -intstyle ise -ifn "D:/Code/Verilog/BitEpicness/Adder1b.xst" -ofn "D:/Code/Verilog/BitEpicness/Adder1b.syr" 

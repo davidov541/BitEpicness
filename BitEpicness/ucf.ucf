@@ -1,0 +1,172 @@
+### UCF File for Digilent Nexys2 FPGA Board (500Kgate version) ###
+### Created by Nexys2 UCF Generator on 4 May 2011 at 21:05
+
+### Nexys2 Clock Oscillator:
+NET clk50 LOC=B8;  # CLK - 50MHz oscillator
+
+### Nexys2 Pushbutton Switches:
+NET reset LOC=H13;  # BTN3 (active high)
+CONFIG PROHIBIT=E18;
+NET lowHigh LOC=D18;  # BTN1 (active high)
+NET switchButton LOC=B18;  # BTN0 (active high)
+
+### Nexys2 Slide Switches:
+NET switches<7> LOC=R17;  # SW7 (active high when up)
+NET switches<6> LOC=N17;  # SW6 (active high when up)
+NET switches<5> LOC=L13;  # SW5 (active high when up)
+NET switches<4> LOC=L14;  # SW4 (active high when up)
+NET switches<3> LOC=K17;  # SW3 (active high when up)
+NET switches<2> LOC=K18;  # SW2 (active high when up)
+NET switches<1> LOC=H18;  # SW1 (active high when up)
+NET switches<0> LOC=G18;  # SW0 (active high when up)
+
+
+
+
+CONFIG PROHIBIT=R4;
+CONFIG PROHIBIT=F4;
+CONFIG PROHIBIT=P15;
+CONFIG PROHIBIT=E17;
+CONFIG PROHIBIT=K14;
+CONFIG PROHIBIT=K15;
+CONFIG PROHIBIT=J15;
+CONFIG PROHIBIT=J14;
+
+
+### Nexys2 7-Segment LED:   digit enables:
+NET ledSync<0> LOC=F15;  # AN3 (left digit) (active low)
+NET ledSync<1> LOC=C18;  # AN2 (middle left digit) (active low)
+NET ledSync<2> LOC=H17;  # AN1 (middle right digit) (active low)
+NET ledSync<3> LOC=F17;  # AN0 (right digit) (active low)
+
+### Nexys2 7-Segment LED:   segment enables:
+NET ledOut<7> LOC=L18;  # CA (LED display segment A) (active low)
+NET ledOut<6> LOC=F18;  # CB (LED display segment B) (active low)
+NET ledOut<5> LOC=D17;  # CC (LED display segment C) (active low)
+NET ledOut<4> LOC=D16;  # CD (LED display segment D) (active low)
+NET ledOut<3> LOC=G14;  # CE (LED display segment E) (active low)
+NET ledOut<2> LOC=J17;  # CF (LED display segment F) (active low)
+NET ledOut<1> LOC=H14;  # CG (LED display segment G) (active low)
+NET ledOut<0> LOC=C17;  # DP (LED display decimal point) (active low)
+
+
+
+
+CONFIG PROHIBIT=U6;
+CONFIG PROHIBIT=P9;
+
+### Nexys2 PS/2 Port:
+NET psclk LOC=R12;  # PS2C - clock
+NET psdata LOC=P11;  # PS2D - data
+
+### Nexys2 VGA Port:
+NET color<7> LOC=R8;  # RED2 (active high)
+NET color<6> LOC=T8;  # RED1 (active high)
+NET color<5> LOC=R9;  # RED0 (active high)
+NET color<4> LOC=P6;  # GREEN2 (active high)
+NET color<3> LOC=P8;  # GREEN1 (active high)
+NET color<2> LOC=N8;  # GREEN0 (active high)
+NET color<1> LOC=U4;  # BLUE2 (active high)
+NET color<0> LOC=U5;  # BLUE1 (active high)
+NET hSync LOC=T4;  # Horizontal sync (active high)
+NET vSync LOC=U3;  # Vertical sync (active high)
+
+
+### Nexys2 Pmod CONNECTORS: JA Connector:
+NET nCS LOC=L15;  # JA1
+NET sdata1 LOC=K12;  # JA2
+NET sdata2 LOC=L17;  # JA3
+NET sclk LOC=M15;  # JA4
+NET x2 LOC=K13;  # JA7
+NET y1 LOC=L16;  # JA8
+NET x1 LOC=M14;  # JA9
+NET y2 LOC=M16;  # JA10
+
+
+CONFIG PROHIBIT=M13;
+CONFIG PROHIBIT=R18;
+CONFIG PROHIBIT=R15;
+CONFIG PROHIBIT=T17;
+CONFIG PROHIBIT=P17;
+CONFIG PROHIBIT=R16;
+CONFIG PROHIBIT=T18;
+CONFIG PROHIBIT=U18;
+
+
+CONFIG PROHIBIT=G15;
+CONFIG PROHIBIT=J16;
+CONFIG PROHIBIT=G13;
+CONFIG PROHIBIT=H16;
+CONFIG PROHIBIT=H15;
+CONFIG PROHIBIT=F14;
+CONFIG PROHIBIT=G16;
+CONFIG PROHIBIT=J12;
+
+### Nexys2 Pmod CONNECTORS: JD Connector:
+NET spiCS LOC=J13;  # JD1
+NET spiMOSI LOC=M18;  # JD2
+NET spiMISO LOC=N18;  # JD3
+NET spiCLK LOC=P18;  # JD4
+
+
+
+### Nexys2 MEMORY DEVICES: Cellular RAM:
+NET MT_ADV LOC=J4;  # MT-ADV
+NET MT_CLK LOC=H5;  # MT-CLK
+NET MT_UB LOC=K4;  # MT-UB
+NET MT_LB LOC=K5;  # MT-LB
+NET MT_CE LOC=R6;  # MT-CE
+NET MT_CRE LOC=P7;  # MT-CRE
+NET MT_WAIT LOC=F5;  # MT-WAIT
+
+
+CONFIG PROHIBIT=R5;
+CONFIG PROHIBIT=T5;
+CONFIG PROHIBIT=D3;
+
+### Nexys2 MEMORY DEVICES: Common Control Signals:
+NET MT_OE LOC=T2;  # OE - output enable
+NET MT_WE LOC=N7;  # WE - write enable
+
+### Nexys2 MEMORY DEVICES: Address (common to both devices):
+NET MT_ADDR<22> LOC=K6;  # ADR23
+NET MT_ADDR<21> LOC=D1;  # ADR22
+NET MT_ADDR<20> LOC=K3;  # ADR21
+NET MT_ADDR<19> LOC=D2;  # ADR20
+NET MT_ADDR<18> LOC=C1;  # ADR19
+NET MT_ADDR<17> LOC=C2;  # ADR18
+NET MT_ADDR<16> LOC=E2;  # ADR17
+NET MT_ADDR<15> LOC=M5;  # ADR16
+NET MT_ADDR<14> LOC=E1;  # ADR15
+NET MT_ADDR<13> LOC=F2;  # ADR14
+NET MT_ADDR<12> LOC=G4;  # ADR13
+NET MT_ADDR<11> LOC=G5;  # ADR12
+NET MT_ADDR<10> LOC=G6;  # ADR11
+NET MT_ADDR<9> LOC=G3;  # ADR10
+NET MT_ADDR<8> LOC=F1;  # ADR9
+NET MT_ADDR<7> LOC=H6;  # ADR8
+NET MT_ADDR<6> LOC=H3;  # ADR7
+NET MT_ADDR<5> LOC=J5;  # ADR6
+NET MT_ADDR<4> LOC=H2;  # ADR5
+NET MT_ADDR<3> LOC=H1;  # ADR4
+NET MT_ADDR<2> LOC=H4;  # ADR3
+NET MT_ADDR<1> LOC=J2;  # ADR2
+NET MT_ADDR<0> LOC=J1;  # ADR1
+
+### Nexys2 MEMORY DEVICES: Data (common for both devices):
+NET MT_DATA<15> LOC=T1;  # DB15
+NET MT_DATA<14> LOC=R3;  # DB14
+NET MT_DATA<13> LOC=N4;  # DB13
+NET MT_DATA<12> LOC=L2;  # DB12
+NET MT_DATA<11> LOC=M6;  # DB11
+NET MT_DATA<10> LOC=M3;  # DB10
+NET MT_DATA<9> LOC=L5;  # DB9
+NET MT_DATA<8> LOC=L3;  # DB8
+NET MT_DATA<7> LOC=R2;  # DB7
+NET MT_DATA<6> LOC=P2;  # DB6
+NET MT_DATA<5> LOC=P1;  # DB5
+NET MT_DATA<4> LOC=N5;  # DB4
+NET MT_DATA<3> LOC=M4;  # DB3
+NET MT_DATA<2> LOC=L6;  # DB2
+NET MT_DATA<1> LOC=L4;  # DB1
+NET MT_DATA<0> LOC=L1;  # DB0

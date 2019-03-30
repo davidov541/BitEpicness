@@ -1,0 +1,7 @@
+V3 3
+FL D:/Code/Verilog/BitEpicness/AD1RefComp.vhd 2008/03/12.22:16:32 M.63c
+EN work/AD1RefComp 1304645721 FL D:/Code/Verilog/BitEpicness/AD1RefComp.vhd \
+      PB ieee/std_logic_1164 1277201847 PB ieee/std_logic_arith 1277201848 \
+      PB ieee/STD_LOGIC_UNSIGNED 1277201849
+AR work/AD1RefComp/AD1 1304645722 \
+      FL D:/Code/Verilog/BitEpicness/AD1RefComp.vhd EN work/AD1RefComp 1304645721

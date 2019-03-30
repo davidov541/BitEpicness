@@ -1,0 +1,67 @@
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest.xst" -ofn "D:/Code/Verilog/MicTest/MicTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 MicTest.ngc MicTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicTest_map.ncd MicTest.ngd MicTest.pcf 
+par -w -intstyle ise -ol high -t 1 MicTest_map.ncd MicTest.ncd MicTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicTest.twx MicTest.ncd -o MicTest.twr MicTest.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MicTest.ut MicTest.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest.xst" -ofn "D:/Code/Verilog/MicTest/MicTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 MicTest.ngc MicTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicTest_map.ncd MicTest.ngd MicTest.pcf 
+par -w -intstyle ise -ol high -t 1 MicTest_map.ncd MicTest.ncd MicTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicTest.twx MicTest.ncd -o MicTest.twr MicTest.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MicTest.ut MicTest.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest.xst" -ofn "D:/Code/Verilog/MicTest/MicTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 MicTest.ngc MicTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicTest_map.ncd MicTest.ngd MicTest.pcf 
+par -w -intstyle ise -ol high -t 1 MicTest_map.ncd MicTest.ncd MicTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicTest.twx MicTest.ncd -o MicTest.twr MicTest.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MicTest.ut MicTest.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest.xst" -ofn "D:/Code/Verilog/MicTest/MicTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 MicTest.ngc MicTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicTest_map.ncd MicTest.ngd MicTest.pcf 
+par -w -intstyle ise -ol high -t 1 MicTest_map.ncd MicTest.ncd MicTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicTest.twx MicTest.ncd -o MicTest.twr MicTest.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MicTest.ut MicTest.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest.xst" -ofn "D:/Code/Verilog/MicTest/MicTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 MicTest.ngc MicTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicTest_map.ncd MicTest.ngd MicTest.pcf 
+par -w -intstyle ise -ol high -t 1 MicTest_map.ncd MicTest.ncd MicTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicTest.twx MicTest.ncd -o MicTest.twr MicTest.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MicTest.ut MicTest.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest.xst" -ofn "D:/Code/Verilog/MicTest/MicTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 MicTest.ngc MicTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicTest_map.ncd MicTest.ngd MicTest.pcf 
+par -w -intstyle ise -ol high -t 1 MicTest_map.ncd MicTest.ncd MicTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicTest.twx MicTest.ncd -o MicTest.twr MicTest.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MicTest.ut MicTest.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest.xst" -ofn "D:/Code/Verilog/MicTest/MicTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 MicTest.ngc MicTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicTest_map.ncd MicTest.ngd MicTest.pcf 
+par -w -intstyle ise -ol high -t 1 MicTest_map.ncd MicTest.ncd MicTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicTest.twx MicTest.ncd -o MicTest.twr MicTest.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MicTest.ut MicTest.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest.xst" -ofn "D:/Code/Verilog/MicTest/MicTest.syr" 
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest.xst" -ofn "D:/Code/Verilog/MicTest/MicTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 MicTest.ngc MicTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicTest_map.ncd MicTest.ngd MicTest.pcf 
+par -w -intstyle ise -ol high -t 1 MicTest_map.ncd MicTest.ncd MicTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicTest.twx MicTest.ncd -o MicTest.twr MicTest.pcf 
+bitgen -intstyle ise -f MicTest.ut MicTest.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest.xst" -ofn "D:/Code/Verilog/MicTest/MicTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 MicTest.ngc MicTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicTest_map.ncd MicTest.ngd MicTest.pcf 
+par -w -intstyle ise -ol high -t 1 MicTest_map.ncd MicTest.ncd MicTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicTest.twx MicTest.ncd -o MicTest.twr MicTest.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MicTest.ut MicTest.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest.xst" -ofn "D:/Code/Verilog/MicTest/MicTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 MicTest.ngc MicTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicTest_map.ncd MicTest.ngd MicTest.pcf 
+par -w -intstyle ise -ol high -t 1 MicTest_map.ncd MicTest.ncd MicTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicTest.twx MicTest.ncd -o MicTest.twr MicTest.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MicTest.ut MicTest.ncd 
+xst -intstyle ise -ifn "D:/Code/Verilog/MicTest/MicTest.xst" -ofn "D:/Code/Verilog/MicTest/MicTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ucf.ucf -p xc3s500e-fg320-4 MicTest.ngc MicTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MicTest_map.ncd MicTest.ngd MicTest.pcf 
+par -w -intstyle ise -ol high -t 1 MicTest_map.ncd MicTest.ncd MicTest.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MicTest.twx MicTest.ncd -o MicTest.twr MicTest.pcf -ucf ucf.ucf 
+bitgen -intstyle ise -f MicTest.ut MicTest.ncd 

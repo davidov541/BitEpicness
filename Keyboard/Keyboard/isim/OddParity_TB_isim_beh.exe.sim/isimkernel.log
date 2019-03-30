@@ -1,0 +1,10 @@
+Command line:
+   OddParity_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  38615
+
+Sat Apr 30 00:12:10 2011
+
+
+ Elaboration Time: 0.234001 sec
